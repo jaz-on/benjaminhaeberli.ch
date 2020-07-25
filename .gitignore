@@ -1,0 +1,10 @@
+# Compiled files
+/assets/css/*.css
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
