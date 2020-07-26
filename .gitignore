@@ -1,5 +1,10 @@
+# NPM
+/node_modules/
+
 # Compiled files
 /assets/css/*.css
+/assets/css/*/*.css
+/assets/css/*/*.css.map
 
 # Logs
 *.log

@@ -1,0 +1,38 @@
+#about {
+    display: flex;
+    min-height: 100vh;
+
+    > div {
+        width: 50%;
+    }
+
+    .about__bio {
+        .container {
+            padding: 100px 200px 0px 200px;
+            p {
+                font-size: 24px;
+                margin-top: 50px;
+            }
+            ul {
+                margin-top: 50px;
+                li {
+                    display: flex;
+                    span {
+                        margin-left: 10px;
+                    }
+                    &:not(:first-child) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .about__image {
+        background-color: #e0b842;
+        background-image: url('../images/benjaminhaeberli.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: red;
+    }
+}
