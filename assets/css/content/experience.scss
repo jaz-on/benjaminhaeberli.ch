@@ -1,0 +1,37 @@
+#experience {
+    @include section;
+    .container {
+        @include section__container;
+        .experience__cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            .card {
+                background: rgba(0, 0, 0, 0.4);
+                padding: 25px;
+                width: 420px;
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $anthracite;
+                }
+                h3 {
+                    margin-top: 35px;
+                    color: $yellow;
+                }
+                .company {
+                    font-size: 24px;
+                }
+                .location {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: $anthracite;
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

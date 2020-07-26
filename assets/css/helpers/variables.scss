@@ -1,2 +1,11 @@
 $anthracite: #686868;
 $yellow: #f9c722;
+
+@mixin section {
+    margin-top: 250px;
+}
+
+@mixin section__container {
+    max-width: 1520px;
+    margin: auto;
+}
