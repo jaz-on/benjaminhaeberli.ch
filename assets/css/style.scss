@@ -131,11 +131,19 @@ a:hover {
                 width: 1120px;
                 background: rgba(0, 0, 0, 0.4);
                 display: flex;
+                -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
                 &:not(:first-child) {
                     margin-top: 100px;
                 }
                 &:nth-child(2n) {
                     align-self: end;
+                }
+                &:hover {
+                    transform: scale(0.95);
+                    .image > div {
+                        background-position: right;
+                    }
                 }
                 div {
                     width: 50%;
@@ -157,8 +165,16 @@ a:hover {
                         }
                     }
                     &.image {
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                        overflow-y: hidden;
+                        div {
+                            height: 100%;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: left;
+                            -o-transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+                            transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+                        }
                     }
                 }
             }
