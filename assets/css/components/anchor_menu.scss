@@ -1,0 +1,32 @@
+#anchor_menu {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    @include legend-font;
+    font-size: 14px;
+    a {
+        margin-top: 20px;
+        -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+        &::before {
+            display: none;
+        }
+        &:hover {
+            color: $yellow;
+            transform: rotate(-30deg);
+        }
+        span {
+            display: flex;
+            align-items: center;
+            width: 74px;
+        }
+    }
+}

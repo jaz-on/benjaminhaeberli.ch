@@ -24,13 +24,24 @@
 
 @font-face {
     font-family: 'JetBrainsMono';
-    font-weight: 700;
+    font-weight: 400;
     src: url('../fonts/JetBrainsMono/JetBrainsMono-Regular.eot');
     src: url('../fonts/JetBrainsMono/JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
         url('../fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
         url('../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype'),
         url('../fonts/JetBrainsMono/JetBrainsMono-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    font-weight: 700;
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold.eot');
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+        url('../fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
+        url('../fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype'),
+        url('../fonts/JetBrainsMono/JetBrainsMono-Bold.svg') format('svg');
 }
 
 @font-face {
@@ -51,10 +62,8 @@
     font-style: italic, oblique;
     src: url('../fonts/Chivo/Chivo-Italic.eot');
     src: url('../fonts/Chivo/Chivo-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Chivo/Chivo-Italic.woff2') format('woff2'),
-        url('../fonts/Chivo/Chivo-Italic.woff') format('woff'),
-        url('../fonts/Chivo/Chivo-Italic.ttf') format('truetype'),
-        url('../fonts/Chivo/Chivo-Italic.svg') format('svg');
+        url('../fonts/Chivo/Chivo-Italic.woff2') format('woff2'), url('../fonts/Chivo/Chivo-Italic.woff') format('woff'),
+        url('../fonts/Chivo/Chivo-Italic.ttf') format('truetype'), url('../fonts/Chivo/Chivo-Italic.svg') format('svg');
 }
 
 @font-face {
@@ -62,8 +71,6 @@
     font-weight: 700;
     src: url('../fonts/Chivo/Chivo-Bold.eot');
     src: url('../fonts/Chivo/Chivo-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Chivo/Chivo-Bold.woff2') format('woff2'),
-        url('../fonts/Chivo/Chivo-Bold.woff') format('woff'),
-        url('../fonts/Chivo/Chivo-Bold.ttf') format('truetype'),
-        url('../fonts/Chivo/Chivo-Bold.svg') format('svg');
+        url('../fonts/Chivo/Chivo-Bold.woff2') format('woff2'), url('../fonts/Chivo/Chivo-Bold.woff') format('woff'),
+        url('../fonts/Chivo/Chivo-Bold.ttf') format('truetype'), url('../fonts/Chivo/Chivo-Bold.svg') format('svg');
 }

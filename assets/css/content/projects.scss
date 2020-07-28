@@ -1,0 +1,71 @@
+#projects {
+    @include section;
+    margin-bottom: 50vh;
+    .container {
+        @include section__container;
+        .projects__cards {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            .card {
+                width: 1120px;
+                background: rgba(0, 0, 0, 0.4);
+                display: flex;
+                -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                cursor: pointer;
+                &:not(:first-child) {
+                    margin-top: 100px;
+                }
+                &:nth-child(2n) {
+                    align-self: end;
+                }
+                &::before {
+                    display: none;
+                }
+                &:hover {
+                    transform: scale(0.95);
+                    .image > div {
+                        background-position: right;
+                    }
+                }
+                div {
+                    width: 50%;
+                    &.details {
+                        padding: 60px 60px;
+                        h3 {
+                            color: $yellow;
+                        }
+                        .url {
+                            color: $anthracite;
+                            font-size: 24px;
+                        }
+                        .description {
+                            margin-top: 25px;
+                        }
+                        .languages {
+                            margin-top: 25px;
+                            color: $anthracite;
+                        }
+                        box-icon {
+                            position: absolute;
+                            left: 50%;
+                        }
+                    }
+                    &.image {
+                        overflow-y: hidden;
+                        div {
+                            height: 100%;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: left;
+                            -o-transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+                            transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

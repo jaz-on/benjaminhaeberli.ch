@@ -2,7 +2,8 @@
 /node_modules/
 
 # Compiled files
-/assets/css/*.css
+!/assets/css/style.css
+!/assets/css/*.css
 /assets/css/*/*.css
 /assets/css/*/*.css.map
 

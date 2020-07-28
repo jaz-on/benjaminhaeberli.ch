@@ -38,6 +38,33 @@
         <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     </head>
     <body>
+        <nav id="social_menu">
+            <a href="https://github.com/benjaminhaeberli" target="_blank"
+                ><box-icon type="logo" name="github"></box-icon
+            ></a>
+            <a href="https://www.linkedin.com/in/benjaminhaeberli/" target="_blank"
+                ><box-icon type="logo" name="linkedin-square"></box-icon
+            ></a>
+            <a href="https://www.facebook.com/benjamin.hae" target="_blank"
+                ><box-icon type="logo" name="facebook"></box-icon
+            ></a>
+            <a href="https://twitter.com/1benjam1" target="_blank"><box-icon type="logo" name="twitter"></box-icon></a>
+            <!-- <a href="" target="_blank"><box-icon type="logo" name="instagram"></box-icon></a> -->
+            <!-- <a href="" target="_blank"><box-icon type="logo" name="youtube"></box-icon></a> -->
+            <!-- <a href="" target="_blank"><box-icon type="logo" name="pinterest"></box-icon></a> -->
+            <!-- <a href="" target="_blank"><box-icon type="logo" name="discord"></box-icon></a> -->
+            <a href="mailto:hello@benjaminhaeberli.ch" target="_blank"
+                ><box-icon type="solid" name="envelope"></box-icon
+            ></a>
+        </nav>
+        <nav id="anchor_menu">
+            <a href="#about"><span>A propos</span></a>
+            <a href="#experience"><span>Expérience</span></a>
+            <a href="#projects"><span>Projets</span></a>
+            <a href="#studies"><span>Formations</span></a>
+            <a href="#skills"><span>Skills</span></a>
+            <a href="#references"><span>Références</span></a>
+        </nav>
         <section id="about">
             <div class="about__bio">
                 <div class="container">
@@ -131,6 +158,21 @@
                         </p>
                     </div>
                 </div>
+                <div class="experience__details">
+                    <div class="cards">
+                        <div class="card">
+                            <!-- <ul>
+                                <li>Architecture/design de base de données (MySQL)</li>
+                                <li>Développement sous Laravel 6 (PHP, HTML, CSS, JS)</li>
+                                <li>Intégration de la plateforme de paiement Stripe (API)</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="btn-plus">
+                        <box-icon name="plus"></box-icon>
+                        <p>Plus de détails</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="projects">
@@ -140,7 +182,7 @@
                     <h2>Projets</h2>
                 </div>
                 <div class="projects__cards">
-                    <div class="card">
+                    <a class="card">
                         <div class="details">
                             <h3>Kinésiologie Burnier</h3>
                             <p class="url">
@@ -152,12 +194,13 @@
                                 forks, and size.
                             </p>
                             <p class="languages">React.js + HTML/CSS/JS</p>
+                            <box-icon name="link-external" color="white"></box-icon>
                         </div>
                         <div class="image">
                             <div style="background-image: url('./assets/images/projects/burnierkine.ch.jpg');"></div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card">
                         <div class="details">
                             <h3>Morgane Raposo Photography</h3>
                             <p class="url">
@@ -169,11 +212,12 @@
                                 forks, and size.
                             </p>
                             <p class="languages">WordPress + Elementor + HTML/CSS/JS</p>
+                            <box-icon name="link-external" color="white"></box-icon>
                         </div>
                         <div class="image">
                             <div style="background-image: url('./assets/images/projects/morganeraposo.ch.jpg');"></div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>

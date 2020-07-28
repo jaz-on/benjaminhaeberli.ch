@@ -1,12 +1,11 @@
 @import './helpers/variables';
 @import './helpers/reset';
 @import './helpers/fonts';
+@import './components/social_menu';
+@import './components/anchor_menu';
 @import './content/about';
 @import './content/experience';
-
-@mixin heading-font {
-    font-family: 'Archivo';
-}
+@import './content/projects';
 
 /* Basic Classes */
 
@@ -29,7 +28,7 @@
 /* Basic Tags */
 
 body {
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: rgba(0, 0, 0, 1);
     background-image: url('../images/background-tinymin.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,7 +76,7 @@ small {
 }
 
 figcaption {
-    font-family: 'JetBrainsMono';
+    @include legend-font;
     font-weight: bold;
 }
 
@@ -118,62 +117,77 @@ a:hover {
     }
 }
 
-#projects {
+@mixin experience__cards {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin experience__card {
+    padding: 25px;
+    width: 470px;
+    box-sizing: border-box;
+}
+
+#experience {
     @include section;
-    margin-bottom: 50vh;
     .container {
         @include section__container;
-        .projects__cards {
-            margin-top: 120px;
-            display: flex;
-            flex-direction: column;
+        .experience__cards {
+            @include experience__cards;
+            margin-top: 100px;
             .card {
-                width: 1120px;
+                @include experience__card;
                 background: rgba(0, 0, 0, 0.4);
-                display: flex;
-                -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-                &:not(:first-child) {
-                    margin-top: 100px;
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $anthracite;
                 }
-                &:nth-child(2n) {
-                    align-self: end;
+                h3 {
+                    margin-top: 35px;
+                    color: $yellow;
                 }
-                &:hover {
-                    transform: scale(0.95);
-                    .image > div {
-                        background-position: right;
+                .company {
+                    font-size: 24px;
+                }
+                .location {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: $anthracite;
+                    span {
+                        margin-left: 5px;
                     }
                 }
-                div {
-                    width: 50%;
-                    &.details {
-                        padding: 60px 60px;
-                        h3 {
-                            color: $yellow;
-                        }
-                        .url {
-                            color: $anthracite;
-                            font-size: 24px;
-                        }
-                        .description {
-                            margin-top: 25px;
-                        }
-                        .languages {
-                            margin-top: 25px;
-                            color: $anthracite;
-                        }
-                    }
-                    &.image {
-                        overflow-y: hidden;
-                        div {
-                            height: 100%;
-                            width: 100%;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: left;
-                            -o-transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
-                            transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+        }
+        .experience__details {
+            .cards {
+                @include experience__cards;
+                .card {
+                    @include experience__card;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            .btn-plus {
+                margin-top: 20px;
+                text-align: center;
+                p {
+                    font-size: 16px;
+                    -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                }
+                box-icon {
+                    fill: white;
+                    border-radius: 20px;
+                    -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                    &:hover {
+                        border-radius: 20px;
+                        transform: translateY(-5px);
+                        cursor: pointer;
+                        & + p {
+                            opacity: 0;
                         }
                     }
                 }

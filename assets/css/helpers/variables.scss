@@ -9,3 +9,11 @@ $yellow: #f9c722;
     max-width: 1520px;
     margin: auto;
 }
+
+@mixin heading-font {
+    font-family: 'Archivo';
+}
+
+@mixin legend-font {
+    font-family: 'JetBrainsMono';
+}
