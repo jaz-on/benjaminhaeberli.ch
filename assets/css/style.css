@@ -888,14 +888,17 @@ a:hover::before {
 }
 
 #experience .container .experience__cards .card {
-  padding: 25px;
   width: 470px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#experience .container .experience__cards .card .content {
+  padding: 25px;
   background: rgba(0, 0, 0, 0.4);
 }
 
-#experience .container .experience__cards .card .header {
+#experience .container .experience__cards .card .content .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,16 +908,16 @@ a:hover::before {
   color: #686868;
 }
 
-#experience .container .experience__cards .card h3 {
+#experience .container .experience__cards .card .content h3 {
   margin-top: 35px;
   color: #f9c722;
 }
 
-#experience .container .experience__cards .card .company {
+#experience .container .experience__cards .card .content .company {
   font-size: 24px;
 }
 
-#experience .container .experience__cards .card .location {
+#experience .container .experience__cards .card .content .location {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -925,54 +928,82 @@ a:hover::before {
   color: #686868;
 }
 
-#experience .container .experience__cards .card .location span {
+#experience .container .experience__cards .card .content .location span {
   margin-left: 5px;
 }
 
-#experience .container .experience__details .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#experience .container .experience__details .cards .card {
+#experience .container .experience__cards .card .details {
+  height: 0px;
   padding: 25px;
-  width: 470px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 16px;
+  overflow: hidden;
+  font-size: 14px;
   line-height: 20px;
-}
-
-#experience .container .experience__details .btn-plus {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#experience .container .experience__details .btn-plus p {
-  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#experience .container .experience__details .btn-plus box-icon {
+#experience .container .experience__cards .card .details .container {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#experience .container .experience__cards .card .details .container small {
+  color: #686868;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#experience .container .experience__cards .card .details.visible {
+  height: 200px;
+  visibility: visible;
+  opacity: 1;
+  border-top: 1px solid #f9c722;
+}
+
+#experience .container .experience__cards .card .details.visible .container {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#experience .container .btn-more {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#experience .container .btn-more p {
+  font-size: 14px;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#experience .container .btn-more p.hidden {
+  display: none;
+}
+
+#experience .container .btn-more box-icon {
   fill: white;
   border-radius: 20px;
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#experience .container .experience__details .btn-plus box-icon:hover {
+#experience .container .btn-more box-icon:hover {
   border-radius: 20px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   cursor: pointer;
 }
 
-#experience .container .experience__details .btn-plus box-icon:hover + p {
+#experience .container .btn-more box-icon:hover ~ p {
   opacity: 0;
+}
+
+#experience .container .btn-more box-icon.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
