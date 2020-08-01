@@ -1,6 +1,4 @@
 #projects {
-    @include section;
-    margin-bottom: 50vh;
     .container {
         @include section__container;
         .projects__cards {
@@ -9,7 +7,7 @@
             flex-direction: column;
             .card {
                 width: 1120px;
-                background: rgba(0, 0, 0, 0.4);
+                background: $darkGray;
                 display: flex;
                 -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
                 transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -24,7 +22,6 @@
                     display: none;
                 }
                 &:hover {
-                    transform: scale(0.95);
                     .image > div {
                         background-position: right;
                     }
@@ -32,13 +29,9 @@
                 div {
                     width: 50%;
                     &.details {
-                        padding: 60px 60px;
-                        h3 {
-                            color: $yellow;
-                        }
+                        padding: 50px;
                         .url {
-                            color: $anthracite;
-                            font-size: 24px;
+                            font-size: 30px;
                         }
                         .description {
                             margin-top: 25px;
@@ -60,8 +53,8 @@
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: left;
-                            -o-transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
-                            transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+                            -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
                         }
                     }
                 }

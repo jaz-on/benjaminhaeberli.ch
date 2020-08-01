@@ -61,13 +61,13 @@
             <a href="#about"><span>A propos</span></a>
             <a href="#experience"><span>Expérience</span></a>
             <a href="#projects"><span>Projets</span></a>
-            <a href="#studies"><span>Formations</span></a>
+            <a href="#education"><span>Formations</span></a>
             <a href="#skills"><span>Skills</span></a>
             <a href="#references"><span>Références</span></a>
         </nav>
         <section id="about">
             <div class="about__bio">
-                <div class="container">
+                <div class="container about__container">
                     <h1>
                         Hello, je suis
                         <span class="colored--yellow">Benjamin Haeberli</span>, un développeur web basé en Suisse.
@@ -90,7 +90,7 @@
                     </p>
                     <ul>
                         <li>
-                            <box-icon type="solid" name="map" color="#f9c722" size="sm"></box-icon>
+                            <box-icon type="solid" name="map" size="sm"></box-icon>
                             <span
                                 ><a href="https://goo.gl/maps/6oRqMPuaJJp3Egru5" target="_blank"
                                     >1860, Aigle (CH)</a
@@ -98,7 +98,7 @@
                             >
                         </li>
                         <li>
-                            <box-icon type="solid" name="envelope" color="#f9c722" size="sm"></box-icon>
+                            <box-icon type="solid" name="envelope" size="sm"></box-icon>
                             <span
                                 ><a href="mailto:hello@benjaminhaeberli.ch" target="_blank"
                                     >hello@benjaminhaeberli.ch</a
@@ -106,128 +106,131 @@
                             >
                         </li>
                         <li>
-                            <box-icon type="solid" name="phone" color="#f9c722" size="sm"></box-icon>
+                            <box-icon type="solid" name="phone" size="sm"></box-icon>
                             <span><a href="tel:+41796684431" target="_blank">+41 (0) 79 668 44 31</a></span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="about__image rellax" data-rellax-speed="5"></div>
+            <div class="about__image" ></div>
         </section>
-        <section id="experience">
-            <div class="container">
-                <div class="section__header">
+        <section class="section" id="experience">
+            <div class="experience__container">
+                <div class="section__header experience__header">
                     <figcaption>01</figcaption>
                     <h2>Expérience</h2>
                 </div>
-                <div class="experience__cards">
-                    <div class="card">
-                        <div class="content">
-                            <div class="header">
-                                <span>2016 - 2017</span>
-                                <figcaption>01</figcaption>
-                            </div>
-                            <h3>Technicien IT</h3>
-                            <p class="company">Krios Suisse SA</p>
-                            <p class="location">
-                                <box-icon type="solid" name="map" color="#f9c722" size="sm"></box-icon>
-                                <span>1860, Aigle (CH)</span>
-                            </p>
+                <div class="experience__items">
+                    <div class="experience__item" data-time="2019 - Actuel">
+                        <div class="experience__timeline">
+                            <div class="timeline__point"></div>
+                            <div class="timeline__line"></div>
                         </div>
-                        <div class="details">
-                            <div class="container">
-                                <ul>
-                                    <li>
-                                        Développement de scripts pour PRTG Network Monitor
-                                        <small>(C#, PowerShell)</small>
-                                    </li>
-                                    <li>
-                                        Gestion et contrôle de données sensibles
-                                        <small>(Emailing, Antivirus, Formatage)</small>
-                                    </li>
-                                    <li>
-                                        Installation & configuration avancée de poste de travail
-                                        <small>(Windows 10, Windows Server 2012, OS X El Capitan)</small>
-                                    </li>
-                                </ul>
+                        <a class="experience__details" href="https://925.ch/" target="blank">
+                            <div class="card experience__job">
+                                <h3 class="job__title">Full-Stack Developer</h3>
+                                <p class="card__subtitle job__company">925 Interactive Sàrl</p>
+                                <p class="location job__location">
+                                    <box-icon type="solid" name="map" size="sm"></box-icon>
+                                    <span>Villeneuve, VD (CH)</span>
+                                </p>
                             </div>
-                        </div>
+                            <div class="experience__works">
+                                <div class="card works__container">
+                                    <ul>
+                                        <li>Architecture & design de base de données <small>(MySQL, PHP)</small></li>
+                                        <li>
+                                            Développement sur mesure avec Laravel 6 <small>(PHP, HTML, CSS, JS)</small>
+                                        </li>
+                                        <li>
+                                            Développement de plugins & thèmes pour Wordpress
+                                            <small>(PHP, HTML, CSS, JS)</small>
+                                        </li>
+                                        <li>
+                                            Intégration de la plateforme de paiement Stripe
+                                            <small>(API, JS)</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="header">
-                                <span>2016 - 2018</span>
-                                <figcaption>02</figcaption>
-                            </div>
-                            <h3>Back-End Developer</h3>
-                            <p class="company">Nanoxi Sàrl</p>
-                            <p class="location">
-                                <box-icon type="solid" name="map" color="#f9c722" size="sm"></box-icon>
-                                <span>Sion, VS (CH)</span>
-                            </p>
+                    <div class="experience__item" data-time="2016 - 2018">
+                        <div class="experience__timeline">
+                            <div class="timeline__point"></div>
+                            <div class="timeline__line"></div>
                         </div>
-                        <div class="details">
-                            <div class="container">
-                                <ul>
-                                    <li>
-                                        Développement de plugins pour Umbraco 6 & 7<small>(C#, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Développement d’une intégration .NET de Office 365
-                                        <small>(C#, HTML, CSS, JS, API)</small>
-                                    </li>
-                                    <li>
-                                        Développement d'un outil de migration de données pour U-Commerce
-                                        <small>(C#, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Installation, configuration et traductions de bornes interactives
-                                        <small>(HTML, CSS, JS)</small>
-                                    </li>
-                                </ul>
+                        <a class="experience__details" href="https://nanoxi.ch/" target="blank">
+                            <div class="card experience__job">
+                                <h3 class="job__title">Back-End Developer</h3>
+                                <p class="card__subtitle job__company">Nanoxi Sàrl</p>
+                                <p class="location job__location">
+                                    <box-icon type="solid" name="map" size="sm"></box-icon>
+                                    <span>Sion, VS (CH)</span>
+                                </p>
                             </div>
-                        </div>
+                            <div class="experience__works">
+                                <div class="card works__container">
+                                    <ul>
+                                        <li>
+                                            Développement de plugins pour Umbraco 6 & 7
+                                            <small>(C#, HTML, CSS, JS)</small>
+                                        </li>
+                                        <li>
+                                            Développement d’une intégration .NET de Office 365
+                                            <small>(C#, HTML, CSS, JS, API)</small>
+                                        </li>
+                                        <li>
+                                            Développement d'un outil de migration de données pour U-Commerce
+                                            <small> (C#, HTML, CSS, JS)</small>
+                                        </li>
+                                        <li>
+                                            Installation, configuration et traductions de bornes interactives
+                                            <small>(HTML, CSS, JS)</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="header">
-                                <span>2019 - Actuel</span>
-                                <figcaption>03</figcaption>
-                            </div>
-                            <h3>Full-Stack Developer</h3>
-                            <p class="company">925 Interactive Sàrl</p>
-                            <p class="location">
-                                <box-icon type="solid" name="map" color="#f9c722" size="sm"></box-icon>
-                                <span>Villeneuve, VD (CH)</span>
-                            </p>
+                    <div class="experience__item" data-time="2016 - 2017">
+                        <div class="experience__timeline">
+                            <div class="timeline__point"></div>
+                            <div class="timeline__line"></div>
                         </div>
-                        <div class="details">
-                            <div class="container">
-                                <ul>
-                                    <li>Architecture & design de base de données <small>(MySQL, PHP)</small></li>
-                                    <li>Développement sur mesure avec Laravel 6 <small>(PHP, HTML, CSS, JS)</small></li>
-                                    <li>
-                                        Développement de plugins & thèmes pour Wordpress
-                                        <small>(PHP, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Intégration de la plateforme de paiement Stripe
-                                        <small>(API, JS)</small>
-                                    </li>
-                                </ul>
+                        <a class="experience__details" href="https://krios.ch/" target="blank">
+                            <div class="card experience__job">
+                                <h3 class="job__title">Technicien IT</h3>
+                                <p class="card__subtitle job__company">Krios Suisse SA</p>
+                                <p class="location job__location">
+                                    <box-icon type="solid" name="map" size="sm"></box-icon>
+                                    <span>1860, Aigle (CH)</span>
+                                </p>
                             </div>
-                        </div>
+                            <div class="experience__works">
+                                <div class="card works__container">
+                                    <ul>
+                                        <li>
+                                            Développement de scripts pour PRTG Network Monitor
+                                            <small>(C#, PowerShell)</small>
+                                        </li>
+                                        <li>
+                                            Gestion et contrôle de données sensibles
+                                            <small>(Emailing, Antivirus, Formatage)</small>
+                                        </li>
+                                        <li>
+                                            Installation & configuration avancée de poste de travail
+                                            <small>(Windows 10, Windows Server 2012, OS X El Capitan)</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="btn-more">
-                    <box-icon name="plus"></box-icon>
-                    <box-icon name="minus" class="hidden"></box-icon>
-                    <p>Plus de détails</p>
-                    <p class="hidden">Moins de détails</p>
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section class="section" id="projects">
             <div class="container">
                 <div class="section__header">
                     <figcaption>02</figcaption>
@@ -237,7 +240,7 @@
                     <a class="card">
                         <div class="details">
                             <h3>Kinésiologie Burnier</h3>
-                            <p class="url">
+                            <p class="card__subtitle url">
                                 burnierkine.ch
                             </p>
                             <p class="description">
@@ -255,7 +258,7 @@
                     <a class="card">
                         <div class="details">
                             <h3>Morgane Raposo Photography</h3>
-                            <p class="url">
+                            <p class="card__subtitle url">
                                 morganeraposo.ch
                             </p>
                             <p class="description">
@@ -270,6 +273,60 @@
                             <div style="background-image: url('./assets/images/projects/morganeraposo.ch.jpg');"></div>
                         </div>
                     </a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="education">
+            <div class="education__container">
+                <div class="section__header education__header">
+                    <figcaption>03</figcaption>
+                    <h2>Formations</h2>
+                </div>
+                <div class="education__items">
+                    <div class="education__studies">
+                        <div class="card education__study"> 
+                            <p class="study__time">2014 - 2018</p>
+                            <h3 class="study__title">Software Developer</h3>
+                            <p class="card__subtitle study__name">EPTM</p>
+                            <p class="study__description">
+                                Base informatique & spécialisation développement d'applications
+                            </p>
+                            <p class="location study__location">
+                                <box-icon type="solid" name="map" size="sm"></box-icon>
+                                <span>Sion, VS (CH)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education__courses">
+                        <div class="card education__course">
+                            <p class="course__time">2019</p>
+                            <h4 class="study__title">React 16+</h3>
+                            <p class="study__description">
+                                Router, Firebase, etc.
+                            </p>
+                        </div>
+                        <div class="card education__course">
+                            <p class="course__time">2020</p>
+                            <h4 class="study__title">SEO</h3>
+                            <p class="study__description">
+                                Référencement naturel
+                            </p>
+                        </div>
+                        <div class="card education__course">
+                            <p class="course__time">2020</p>
+                            <h4 class="study__title">Vue.js</h3>
+                            <p class="study__description">
+                                Vue Router, Vuex, etc.
+                            </p>
+                        </div>
+                        <div class="card education__course">
+                            <p class="course__time">2020</p>
+                            <h4 class="study__title">Méthode Agile</h3>
+                            <p class="study__description">
+                               Gestion de projet
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

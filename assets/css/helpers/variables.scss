@@ -1,8 +1,14 @@
 $anthracite: #686868;
 $yellow: #f9c722;
+$darkGray: #020202;
 
-@mixin section {
-    margin-top: 250px;
+@mixin section__header {
+    text-align: center;
+    figcaption {
+        font-size: 24px;
+        color: $yellow;
+        margin-bottom: 5px;
+    }
 }
 
 @mixin section__container {

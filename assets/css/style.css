@@ -654,9 +654,135 @@ textarea {
   background-image: url("../images/benjaminhaeberli_hover.png");
 }
 
-#projects {
-  margin-top: 250px;
-  margin-bottom: 50vh;
+#experience .experience__container {
+  max-width: 1520px;
+  margin: auto;
+}
+
+#experience .experience__container .experience__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 160px;
+}
+
+#experience .experience__container .experience__items .experience__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#experience .experience__container .experience__items .experience__item::before {
+  content: attr(data-time);
+  position: relative;
+  color: #686868;
+  width: 130px;
+}
+
+#experience .experience__container .experience__items .experience__item .experience__timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+}
+
+#experience .experience__container .experience__items .experience__item .experience__timeline .timeline__point {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: #f9c722;
+}
+
+#experience .experience__container .experience__items .experience__item .experience__timeline .timeline__line {
+  width: 1px;
+  height: 100%;
+  background: #f9c722;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details {
+  margin-left: 75px;
+  width: 760px;
+  text-decoration: none;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details:before {
+  display: none;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .card.experience__job {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .card.experience__job .job__location {
+  margin-top: 30px;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .experience__works {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  margin: 20px 0px;
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .experience__works .card.works__container {
+  background: none;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .experience__works .card.works__container ul li small {
+  color: #686868;
+  display: block;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details .experience__works .card.works__container ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details:hover .experience__job {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details:hover .experience__works {
+  max-height: 500px;
+  visibility: visible;
+  opacity: 1;
+}
+
+#experience .experience__container .experience__items .experience__item a.experience__details:hover .experience__works .works__container {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#experience .experience__container .experience__items .experience__item:last-child .timeline__line {
+  height: 0px;
 }
 
 #projects .container {
@@ -677,7 +803,7 @@ textarea {
 
 #projects .container .projects__cards .card {
   width: 1120px;
-  background: rgba(0, 0, 0, 0.4);
+  background: #020202;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,11 +826,6 @@ textarea {
   display: none;
 }
 
-#projects .container .projects__cards .card:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
 #projects .container .projects__cards .card:hover .image > div {
   background-position: right;
 }
@@ -714,16 +835,11 @@ textarea {
 }
 
 #projects .container .projects__cards .card div.details {
-  padding: 60px 60px;
-}
-
-#projects .container .projects__cards .card div.details h3 {
-  color: #f9c722;
+  padding: 50px;
 }
 
 #projects .container .projects__cards .card div.details .url {
-  color: #686868;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #projects .container .projects__cards .card div.details .description {
@@ -750,8 +866,8 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  -webkit-transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* Basic Classes */
@@ -767,6 +883,12 @@ textarea {
   text-align: center;
 }
 
+.section {
+  margin-top: 250px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .unfocused {
   opacity: 0.5;
 }
@@ -774,18 +896,12 @@ textarea {
 /* Basic Tags */
 body {
   background-color: black;
-  background-image: url("../images/background-tinymin.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: 'Chivo';
   font-size: 20px;
   font-style: normal;
-}
-
-section {
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
 }
 
 h1 {
@@ -804,6 +920,13 @@ h2 {
 h3 {
   font-size: 30px;
   font-weight: bold;
+  color: #f9c722;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9c722;
 }
 
 p {
@@ -822,7 +945,10 @@ small {
 
 figcaption {
   font-family: 'JetBrainsMono';
-  font-weight: bold;
+}
+
+box-icon {
+  fill: #f9c722;
 }
 
 .section__header figcaption {
@@ -868,57 +994,105 @@ a:hover::before {
   width: 0%;
 }
 
-#experience {
-  margin-top: 250px;
+#education {
+  margin-bottom: 200px;
 }
 
-#experience .container {
+#education .education__container {
   max-width: 1520px;
   margin: auto;
 }
 
-#experience .container .experience__cards {
+#education .education__container .education__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 160px;
+}
+
+#education .education__container .education__items .card {
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#education .education__container .education__items .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: none;
+}
+
+#education .education__container .education__items .education__studies {
+  margin: 0px 100px 0px 0px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study {
+  width: 400px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__time {
+  color: #686868;
+  margin-bottom: 30px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__name {
+  margin-bottom: 10px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__description {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+#education .education__container .education__items .education__courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
 }
 
-#experience .container .experience__cards .card {
-  width: 470px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#experience .container .experience__cards .card .content {
+#education .education__container .education__items .education__courses .card.education__course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 100px;
   padding: 25px;
-  background: rgba(0, 0, 0, 0.4);
 }
 
-#experience .container .experience__cards .card .content .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+#education .education__container .education__items .education__courses .card.education__course .course__time {
   color: #686868;
 }
 
-#experience .container .experience__cards .card .content h3 {
-  margin-top: 35px;
-  color: #f9c722;
+.card {
+  padding: 50px;
+  background: #020202;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-#experience .container .experience__cards .card .content .company {
-  font-size: 24px;
+.card .card__subtitle {
+  font-size: 30px;
 }
 
-#experience .container .experience__cards .card .content .location {
-  margin-top: 30px;
+.card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  background: none;
+}
+
+.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,82 +1102,7 @@ a:hover::before {
   color: #686868;
 }
 
-#experience .container .experience__cards .card .content .location span {
+.location span {
   margin-left: 5px;
-}
-
-#experience .container .experience__cards .card .details {
-  height: 0px;
-  padding: 25px;
-  overflow: hidden;
-  font-size: 14px;
-  line-height: 20px;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-#experience .container .experience__cards .card .details .container {
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-#experience .container .experience__cards .card .details .container small {
-  color: #686868;
-  font-size: 12px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-#experience .container .experience__cards .card .details.visible {
-  height: 200px;
-  visibility: visible;
-  opacity: 1;
-  border-top: 1px solid #f9c722;
-}
-
-#experience .container .experience__cards .card .details.visible .container {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-#experience .container .btn-more {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#experience .container .btn-more p {
-  font-size: 14px;
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-#experience .container .btn-more p.hidden {
-  display: none;
-}
-
-#experience .container .btn-more box-icon {
-  fill: white;
-  border-radius: 20px;
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-#experience .container .btn-more box-icon:hover {
-  border-radius: 20px;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  cursor: pointer;
-}
-
-#experience .container .btn-more box-icon:hover ~ p {
-  opacity: 0;
-}
-
-#experience .container .btn-more box-icon.hidden {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
