@@ -597,6 +597,8 @@ textarea {
   display: flex;
   min-height: 100vh;
   overflow: hidden;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #about > div {
@@ -641,10 +643,8 @@ textarea {
   background-size: contain;
   color: red;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #about .about__image:hover {
@@ -768,6 +768,7 @@ textarea {
 #experience .experience__container .experience__items .experience__item a.experience__details:hover .experience__job {
   -webkit-transform: scale(1);
           transform: scale(1);
+  background: none;
 }
 
 #experience .experience__container .experience__items .experience__item a.experience__details:hover .experience__works {
@@ -812,6 +813,10 @@ textarea {
   cursor: pointer;
 }
 
+#projects .container .projects__cards .card::before {
+  display: none;
+}
+
 #projects .container .projects__cards .card:not(:first-child) {
   margin-top: 100px;
 }
@@ -820,10 +825,6 @@ textarea {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-}
-
-#projects .container .projects__cards .card::before {
-  display: none;
 }
 
 #projects .container .projects__cards .card:hover .image > div {
@@ -891,6 +892,8 @@ textarea {
 
 .unfocused {
   opacity: 0.5;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* Basic Tags */
@@ -1029,6 +1032,10 @@ a:hover::before {
   width: 400px;
 }
 
+#education .education__container .education__items .education__studies .card.education__study::before {
+  display: none;
+}
+
 #education .education__container .education__items .education__studies .card.education__study .study__time {
   color: #686868;
   margin-bottom: 30px;
@@ -1068,6 +1075,11 @@ a:hover::before {
   width: 350px;
   height: 100px;
   padding: 25px;
+  margin-bottom: 40px;
+}
+
+#education .education__container .education__items .education__courses .card.education__course::before {
+  display: none;
 }
 
 #education .education__container .education__items .education__courses .card.education__course .course__time {

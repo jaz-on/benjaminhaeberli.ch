@@ -5,7 +5,8 @@
     & > div {
         width: 50%;
     }
-
+    -o-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     .about__bio {
         .container {
             padding: 100px 200px 0px 200px;
@@ -36,8 +37,8 @@
         background-size: contain;
         color: red;
         cursor: pointer;
-        -o-transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         &:hover {
             transform: translatex(35px);
             background-color: #e3ded8;

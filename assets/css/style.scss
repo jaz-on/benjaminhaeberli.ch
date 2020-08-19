@@ -29,6 +29,8 @@
 
 .unfocused {
     opacity: 0.5;
+    -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* Basic Tags */
@@ -141,6 +143,7 @@ a {
             .education__studies {
                 margin: 0px 100px 0px 0px;
                 .card.education__study {
+                    @include nobefore;
                     width: 400px;
                     .study__time {
                         color: $anthracite;
@@ -159,13 +162,16 @@ a {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+
                 .card.education__course {
+                    @include nobefore;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     width: 350px;
                     height: 100px;
                     padding: 25px;
+                    margin-bottom: 40px;
                     .course__time {
                         color: $anthracite;
                     }

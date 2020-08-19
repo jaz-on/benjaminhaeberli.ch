@@ -6,6 +6,7 @@
             display: flex;
             flex-direction: column;
             .card {
+                @include nobefore;
                 width: 1120px;
                 background: $darkGray;
                 display: flex;
@@ -17,9 +18,6 @@
                 }
                 &:nth-child(2n) {
                     align-self: end;
-                }
-                &::before {
-                    display: none;
                 }
                 &:hover {
                     .image > div {

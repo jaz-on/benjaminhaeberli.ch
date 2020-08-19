@@ -18,7 +18,7 @@ document.body.onscroll = function () {
     }
 
     /* Scale About */
-    var scaleAmt = 1 / (1 + scrollY / 2000);
+    var scaleAmt = 1 / (1 + scrollY / 2500);
     sectionsDOM['about'].setAttribute('style', 'transform : scale(' + scaleAmt + ')');
     console.log(sectionsDOM['projects'].offsetTop);
 

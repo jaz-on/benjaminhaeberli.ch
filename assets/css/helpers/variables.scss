@@ -23,3 +23,9 @@ $darkGray: #020202;
 @mixin legend-font {
     font-family: 'JetBrainsMono';
 }
+
+@mixin nobefore {
+    &::before {
+        display: none;
+    }
+}

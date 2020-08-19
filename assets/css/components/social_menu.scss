@@ -7,11 +7,10 @@
     height: 100%;
     margin-left: 30px;
     a {
+        @include nobefore;
         -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        &::before {
-            display: none;
-        }
+
         &:hover {
             transform: translateX(7px);
         }

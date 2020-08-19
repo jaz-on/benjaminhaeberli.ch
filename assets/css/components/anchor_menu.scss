@@ -12,13 +12,11 @@
     @include legend-font;
     font-size: 14px;
     a {
+        @include nobefore;
         margin-top: 20px;
         -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 
-        &::before {
-            display: none;
-        }
         &:hover {
             color: $yellow;
             transform: rotate(-30deg);
