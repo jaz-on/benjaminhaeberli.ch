@@ -1,0 +1,27 @@
+{
+    "name": "benjaminhaeberli.ch",
+    "version": "1.0.0",
+    "description": "Personal website",
+    "main": "index.html",
+    "dependencies": {
+        "smooth-scrollbar": "^8.5.2"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/benjaminhaeberli/benjaminhaeberli.ch.git"
+    },
+    "author": "Benjamin Haeberli",
+    "license": "gpl-3.0",
+    "bugs": {
+        "url": "https://github.com/benjaminhaeberli/benjaminhaeberli.ch/issues"
+    },
+    "homepage": "https://github.com/benjaminhaeberli/benjaminhaeberli.ch#readme"
+}

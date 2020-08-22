@@ -4,6 +4,7 @@
 @import './components/social_menu';
 @import './components/anchor_menu';
 @import './content/about';
+@import './content/education';
 @import './content/experience';
 @import './content/projects';
 
@@ -126,61 +127,6 @@ a {
         }
     }
 }
-#education {
-    margin-bottom: 200px;
-    .education__container {
-        @include section__container;
-        .education__items {
-            display: flex;
-            margin-top: 160px;
-            .card {
-                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-                &:hover {
-                    transform: scale(0.95);
-                    background: none;
-                }
-            }
-            .education__studies {
-                margin: 0px 100px 0px 0px;
-                .card.education__study {
-                    @include nobefore;
-                    width: 400px;
-                    .study__time {
-                        color: $anthracite;
-                        margin-bottom: 30px;
-                    }
-                    .study__name {
-                        margin-bottom: 10px;
-                    }
-                    .study__description {
-                        line-height: 25px;
-                        margin-bottom: 30px;
-                    }
-                }
-            }
-            .education__courses {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .card.education__course {
-                    @include nobefore;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    width: 350px;
-                    height: 100px;
-                    padding: 25px;
-                    margin-bottom: 40px;
-                    .course__time {
-                        color: $anthracite;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .card {
     padding: 50px;
     background: $darkGray;
@@ -201,5 +147,68 @@ a {
     color: $anthracite;
     span {
         margin-left: 5px;
+    }
+}
+
+#projects {
+    .container {
+        @include section__container;
+        .projects__cards {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            .card.projects__project {
+                padding: 0px;
+                @include nobefore;
+                width: 1120px;
+                display: flex;
+                -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                cursor: pointer;
+                &:not(:first-child) {
+                    margin-top: 100px;
+                }
+                &:nth-child(2n) {
+                    align-self: end;
+                }
+                &:hover {
+                    transform: scale(0.97);
+                    .project__image > div {
+                        background-position: right;
+                    }
+                }
+                div {
+                    width: 50%;
+                    &.project__details {
+                        padding: 50px;
+                        .project__url {
+                            font-size: 30px;
+                        }
+                        .project__description {
+                            margin-top: 25px;
+                        }
+                        .project__languages {
+                            margin-top: 25px;
+                            color: $anthracite;
+                        }
+                        box-icon {
+                            float: right;
+                        }
+                    }
+                    &.project__image {
+                        overflow-y: hidden;
+                        div {
+                            height: 100%;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: left;
+                            -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

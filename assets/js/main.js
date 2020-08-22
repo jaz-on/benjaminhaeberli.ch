@@ -1,4 +1,6 @@
-var element = document.getElementById('experience');
+import Scrollbar from '../../node_modules/smooth-scrollbar/dist/smooth-scrollbar.js';
+
+/* Scrollbar.init(document.querySelector('#main-scrollbar')); */
 
 var sections = ['about', 'experience', 'projects'];
 var sectionsDOM = {};

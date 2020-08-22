@@ -654,6 +654,89 @@ textarea {
   background-image: url("../images/benjaminhaeberli_hover.png");
 }
 
+#education {
+  margin-bottom: 200px;
+}
+
+#education .education__container {
+  max-width: 1520px;
+  margin: auto;
+}
+
+#education .education__container .education__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 160px;
+}
+
+#education .education__container .education__items .card {
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#education .education__container .education__items .education__studies {
+  margin: 0px 100px 0px 0px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study {
+  width: 400px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study::before {
+  display: none;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__time {
+  color: #686868;
+  margin-bottom: 30px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__name {
+  margin-bottom: 10px;
+}
+
+#education .education__container .education__items .education__studies .card.education__study .study__description {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+#education .education__container .education__items .education__courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#education .education__container .education__items .education__courses .card.education__course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 100px;
+  padding: 25px;
+  margin-bottom: 40px;
+}
+
+#education .education__container .education__items .education__courses .card.education__course::before {
+  display: none;
+}
+
+#education .education__container .education__items .education__courses .card.education__course .course__time {
+  color: #686868;
+}
+
 #experience .experience__container {
   max-width: 1520px;
   margin: auto;
@@ -786,91 +869,6 @@ textarea {
   height: 0px;
 }
 
-#projects .container {
-  max-width: 1520px;
-  margin: auto;
-}
-
-#projects .container .projects__cards {
-  margin-top: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#projects .container .projects__cards .card {
-  width: 1120px;
-  background: #020202;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  cursor: pointer;
-}
-
-#projects .container .projects__cards .card::before {
-  display: none;
-}
-
-#projects .container .projects__cards .card:not(:first-child) {
-  margin-top: 100px;
-}
-
-#projects .container .projects__cards .card:nth-child(2n) {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-}
-
-#projects .container .projects__cards .card:hover .image > div {
-  background-position: right;
-}
-
-#projects .container .projects__cards .card div {
-  width: 50%;
-}
-
-#projects .container .projects__cards .card div.details {
-  padding: 50px;
-}
-
-#projects .container .projects__cards .card div.details .url {
-  font-size: 30px;
-}
-
-#projects .container .projects__cards .card div.details .description {
-  margin-top: 25px;
-}
-
-#projects .container .projects__cards .card div.details .languages {
-  margin-top: 25px;
-  color: #686868;
-}
-
-#projects .container .projects__cards .card div.details box-icon {
-  position: absolute;
-  left: 50%;
-}
-
-#projects .container .projects__cards .card div.image {
-  overflow-y: hidden;
-}
-
-#projects .container .projects__cards .card div.image div {
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
 /* Basic Classes */
 .colored--yellow {
   color: #f9c722;
@@ -997,98 +995,9 @@ a:hover::before {
   width: 0%;
 }
 
-#education {
-  margin-bottom: 200px;
-}
-
-#education .education__container {
-  max-width: 1520px;
-  margin: auto;
-}
-
-#education .education__container .education__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 160px;
-}
-
-#education .education__container .education__items .card {
-  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-#education .education__container .education__items .card:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  background: none;
-}
-
-#education .education__container .education__items .education__studies {
-  margin: 0px 100px 0px 0px;
-}
-
-#education .education__container .education__items .education__studies .card.education__study {
-  width: 400px;
-}
-
-#education .education__container .education__items .education__studies .card.education__study::before {
-  display: none;
-}
-
-#education .education__container .education__items .education__studies .card.education__study .study__time {
-  color: #686868;
-  margin-bottom: 30px;
-}
-
-#education .education__container .education__items .education__studies .card.education__study .study__name {
-  margin-bottom: 10px;
-}
-
-#education .education__container .education__items .education__studies .card.education__study .study__description {
-  line-height: 25px;
-  margin-bottom: 30px;
-}
-
-#education .education__container .education__items .education__courses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#education .education__container .education__items .education__courses .card.education__course {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 350px;
-  height: 100px;
-  padding: 25px;
-  margin-bottom: 40px;
-}
-
-#education .education__container .education__items .education__courses .card.education__course::before {
-  display: none;
-}
-
-#education .education__container .education__items .education__courses .card.education__course .course__time {
-  color: #686868;
-}
-
 .card {
   padding: 50px;
-  background: #020202;
+  background: #040404;
   cursor: pointer;
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1116,5 +1025,94 @@ a:hover::before {
 
 .location span {
   margin-left: 5px;
+}
+
+#projects .container {
+  max-width: 1520px;
+  margin: auto;
+}
+
+#projects .container .projects__cards {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects .container .projects__cards .card.projects__project {
+  padding: 0px;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+
+#projects .container .projects__cards .card.projects__project::before {
+  display: none;
+}
+
+#projects .container .projects__cards .card.projects__project:not(:first-child) {
+  margin-top: 100px;
+}
+
+#projects .container .projects__cards .card.projects__project:nth-child(2n) {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#projects .container .projects__cards .card.projects__project:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+#projects .container .projects__cards .card.projects__project:hover .project__image > div {
+  background-position: right;
+}
+
+#projects .container .projects__cards .card.projects__project div {
+  width: 50%;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__details {
+  padding: 50px;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__details .project__url {
+  font-size: 30px;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__details .project__description {
+  margin-top: 25px;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__details .project__languages {
+  margin-top: 25px;
+  color: #686868;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__details box-icon {
+  float: right;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__image {
+  overflow-y: hidden;
+}
+
+#projects .container .projects__cards .card.projects__project div.project__image div {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 /*# sourceMappingURL=style.css.map */
