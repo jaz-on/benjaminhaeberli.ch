@@ -71,6 +71,12 @@ h4 {
     color: $yellow;
 }
 
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: $yellow;
+}
+
 p {
     font-size: 20px;
     line-height: 35px;
@@ -149,64 +155,110 @@ a {
         margin-left: 5px;
     }
 }
+#footer {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#contact {
+    .contact__container {
+        @include section__container;
+        .contact__content {
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            width: 800px;
+            .contact__email {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+#referees {
+    .referees__container {
+        @include section__container;
+        .referees__cards {
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 150px;
+            justify-content: center;
+            .referees__card {
+                h5,
+                p {
+                    line-height: 1.25em;
+                }
+                a {
+                    @include nobefore;
+                    color: $anthracite;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#skills {
+    .skills__container {
+        @include section__container;
+        .skills__columns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            h3 {
+                color: white;
+            }
+            ul {
+                font-style: italic;
+                margin-top: 30px;
+                li {
+                    span {
+                        color: $anthracite;
+                    }
+                    &.favorite {
+                        color: $yellow;
+                        font-weight: bold;
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 #projects {
-    .container {
+    .projects_container {
         @include section__container;
         .projects__cards {
-            margin-top: 120px;
+            margin-top: 200px;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: flex-start;
             .card.projects__project {
-                padding: 0px;
                 @include nobefore;
-                width: 1120px;
-                display: flex;
-                -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+                padding: 50px;
+                width: 380px;
                 cursor: pointer;
-                &:not(:first-child) {
-                    margin-top: 100px;
+                .project__header {
+                    display: flex;
+                    justify-content: space-between;
                 }
-                &:nth-child(2n) {
-                    align-self: end;
+                h3 {
+                    margin-top: 30px;
+                    color: white;
                 }
-                &:hover {
-                    transform: scale(0.97);
-                    .project__image > div {
-                        background-position: right;
-                    }
+                .project__description {
+                    margin-top: 25px;
                 }
-                div {
-                    width: 50%;
-                    &.project__details {
-                        padding: 50px;
-                        .project__url {
-                            font-size: 30px;
-                        }
-                        .project__description {
-                            margin-top: 25px;
-                        }
-                        .project__languages {
-                            margin-top: 25px;
-                            color: $anthracite;
-                        }
-                        box-icon {
-                            float: right;
-                        }
-                    }
-                    &.project__image {
-                        overflow-y: hidden;
-                        div {
-                            height: 100%;
-                            width: 100%;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: left;
-                            -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-                            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-                        }
-                    }
+                .project__languages {
+                    margin-top: 25px;
+                    color: $anthracite;
                 }
             }
         }

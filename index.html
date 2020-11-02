@@ -44,9 +44,9 @@
         <a href="https://www.facebook.com/benjamin.hae" target="_blank">
             <box-icon type="logo" name="facebook"></box-icon>
         </a>
-        <a href="https://twitter.com/1benjam1" target="_blank">
+        <!-- <a href="https://twitter.com/1benjam1" target="_blank">
             <box-icon type="logo" name="twitter"></box-icon>
-        </a>
+        </a> -->
         <!-- <a href="" target="_blank"><box-icon type="logo" name="instagram"></box-icon></a> -->
         <!-- <a href="" target="_blank"><box-icon type="logo" name="youtube"></box-icon></a> -->
         <!-- <a href="" target="_blank"><box-icon type="logo" name="pinterest"></box-icon></a> -->
@@ -61,7 +61,7 @@
         <a href="#projects"><span>Projets</span></a>
         <a href="#education"><span>Formations</span></a>
         <a href="#skills"><span>Skills</span></a>
-        <a href="#references"><span>Références</span></a>
+        <a href="#referees"><span>Références</span></a>
     </nav>
     <section id="about">
         <div class="about__bio">
@@ -220,47 +220,68 @@
         </div>
     </section>
     <section class="section" id="projects">
-        <div class="container">
+        <div class="projects_container">
             <div class="section__header">
                 <figcaption>02</figcaption>
                 <h2>Projets</h2>
             </div>
             <div class="projects__cards">
                 <a class="card projects__project">
-                    <div class="project__details">
-                        <h3>Kinésiologie Burnier</h3>
-                        <p class="card__subtitle project__url">
-                            burnierkine.ch
-                        </p>
-                        <p class="project__description">
-                            A nicer look at your GitHub profile and repo stats. Includes data visualizations of your
-                            top languages, starred repositories, and sort through your top repos by number of stars,
-                            forks, and size.
-                        </p>
-                        <p class="project__languages">React.js + HTML/CSS/JS</p>
-                        <box-icon name="link-external" color="white"></box-icon>
+                    <div class="project__header">
+                        <div>
+                            <box-icon name='yin-yang' type='solid' size="lg"></box-icon>
+                        </div>
+                        <div>
+                            <box-icon type='logo' name='github' color="white"></box-icon>
+                            <box-icon name="link-external" color="white"></box-icon>
+                        </div>
+
                     </div>
-                    <div class="project__image">
-                        <div style="background-image: url('./assets/images/projects/burnierkine.ch.jpg');"></div>
-                    </div>
+                    <h3>Kinésiologie Burnier</h3>
+                    <p class="project__description">
+                        A nicer look at your GitHub profile and repo stats. Includes data visualizations of your
+                        top languages, starred repositories, and sort through your top repos by number of stars,
+                        forks, and size.
+                    </p>
+                    <p class="project__languages">React.js · SCSS · JS</p>
                 </a>
                 <a class="card projects__project">
-                    <div class="project__details">
-                        <h3>Morgane Raposo Photography</h3>
-                        <p class="card__subtitle project_url">
-                            morganeraposo.ch
-                        </p>
-                        <p class="project__description">
-                            A nicer look at your GitHub profile and repo stats. Includes data visualizations of your
-                            top languages, starred repositories, and sort through your top repos by number of stars,
-                            forks, and size.
-                        </p>
-                        <p class="project__languages">WordPress + Elementor + HTML/CSS/JS</p>
-                        <box-icon name="link-external" color="white"></box-icon>
+                    <div class="project__header">
+                        <div>
+                            <box-icon name='camera' size="lg"></box-icon>
+                        </div>
+                        <div>
+                            <box-icon type='logo' name='github' color="white"></box-icon>
+                            <box-icon name="link-external" color="white"></box-icon>
+                        </div>
+
                     </div>
-                    <div class="project__image">
-                        <div style="background-image: url('./assets/images/projects/morganeraposo.ch.jpg');"></div>
+                    <h3>Morgane Raposo</h3>
+                    <p class="project__description">
+                        A nicer look at your GitHub profile and repo stats. Includes data visualizations of your
+                        top languages, starred repositories, and sort through your top repos by number of stars,
+                        forks, and size.
+                    </p>
+                    <p class="project__languages">WordPress · Elementor · CSS · JS</p>
+                </a>
+                <a class="card projects__project">
+                    <div class="project__header">
+                        <div>
+                            <box-icon name='music' size="lg"></box-icon>
+                        </div>
+                        <div>
+                            <box-icon type='logo' name='github' color="white"></box-icon>
+                            <box-icon name="link-external" color="white"></box-icon>
+                        </div>
+
                     </div>
+                    <h3>Sunday Fog</h3>
+                    <p class="project__description">
+                        A nicer look at your GitHub profile and repo stats. Includes data visualizations of your
+                        top languages, starred repositories, and sort through your top repos by number of stars,
+                        forks, and size.
+                    </p>
+                    <p class="project__languages">WordPress · Elementor · CSS · JS</p>
                 </a>
             </div>
         </div>
@@ -333,6 +354,108 @@
             </div>
         </div>
     </section>
+    <section class="section" id="skills">
+        <div class="skills__container">
+            <div class="section__header skills__header">
+                <figcaption>04</figcaption>
+                <h2>Skills</h2>
+            </div>
+            <div class="skills__columns">
+                <div class="skills__column">
+                    <h3>Code</h3>
+                    <ul>
+                        <li class="favorite">PHP*</li>
+                        <li>Javascript</li>
+                        <li>HTML & CSS</li>
+                        <li>C#/.NET</li>
+                        <li class="favorite">SQL*</li>
+                        <li class="favorite">GIT*</li>
+                    </ul>
+                </div>
+                <div class="skills__column">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li class="favorite">Laravel*</li>
+                        <li>React.js</li>
+                        <li>Vue.js <span>(en cours)</span></li>
+                        <li>JQuery</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skills__column">
+                    <h3>Outils</h3>
+                    <ul>
+                        <li class="favorite">WordPress*</li>
+                        <li class="favorite">WooCommerce*</li>
+                        <li>Elementor</li>
+                        <li class="favorite">Composer*</li>
+                        <li>NPM</li>
+                        <li>Buddy</li>
+                        <li>Gulp</li>
+                    </ul>
+                </div>
+                <div class="skills__column">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="referees">
+        <div class="referees__container">
+            <div class="section__header">
+                <figcaption>05</figcaption>
+                <h2>Références</h2>
+            </div>
+            <div class="referees__cards">
+                <div class="referees__card">
+                    <h5>Pascal Allaz</h5>
+                    <p>CEO</p>
+                    <p>925 Sàrl Interactive</p>
+                    <p>Villeneuve, VD</p>
+                    <p><a href="tel:41792041655">+41 79 204 16 55</a></p>
+                    <p><a href="mailto:pascal@925.ch">pascal@925.ch</a></p>
+                </div>
+                <div class="referees__card">
+                    <h5>Gilles Faessler</h5>
+                    <p>Responsable de stage</p>
+                    <p>Nanoxi Sàrl</p>
+                    <p>Sion, VS</p>
+                    <p><a href="tel:41788252219">+41 78 825 22 19</a></p>
+                    <p><a href="mailto:gilles.faessler@nanoxi.com">gilles.faessler@nanoxi.com</a></p>
+                </div>
+                <div class="referees__card">
+                    <h5>Frédéric Papilloud</h5>
+                    <p>Responsable de stage</p>
+                    <p>Krios SA</p>
+                    <p>Sion, VS</p>
+                    <p><a href="tel:41273233838">+41 27 323 38 38</a></p>
+                    <p><a href="mailto:frederic.papilloud@krios.ch">frederic.papilloud@krios.ch</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="contact__container">
+            <div class="section__header">
+                <figcaption>06</figcaption>
+                <h2>Contact</h2>
+            </div>
+            <div class="contact__content">
+                <p>Je suis toujours à l'affût de nouveaux projets et idées auxquels je pourrais collaborer, c'est
+                    pourquoi ma boîte de réception est toujours
+                    ouverte. N'hésitez pas à m'envoyer un email pour discuter ensemble !</p>
+                <p class="contact__email"><a href="mailto:hello@benjaminhaeberli.ch" target="_blank">
+                        hello@benjaminhaeberli.ch
+                    </a></p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="footer"><small>Site créé avec ❤️ par <a
+                href="https://www.linkedin.com/in/benjaminhaeberli/">Benjamin Haeberli</a></small></section>
 </body>
 <script type="module" src="./assets/js/vendors/boxicons.js"></script>
 <script type="module" src="./assets/js/vendors/rellax.min.js"></script>
