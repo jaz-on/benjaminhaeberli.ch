@@ -4,8 +4,7 @@
     "description": "Personal website",
     "main": "index.html",
     "dependencies": {
-        "del": "^5.1.0",
-        "smooth-scrollbar": "^8.5.2"
+        "del": "^5.1.0"
     },
     "devDependencies": {
         "browser-sync": "^2.26.12",

@@ -1,0 +1,25 @@
+#referees {
+    .referees__container {
+        @include section__container;
+        .referees__cards {
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 150px;
+            justify-content: center;
+            .referees__card {
+                h5,
+                p {
+                    line-height: 1.25em;
+                }
+                a {
+                    @include nobefore;
+                    color: $anthracite;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}

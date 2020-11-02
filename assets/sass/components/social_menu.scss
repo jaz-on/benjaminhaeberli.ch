@@ -1,6 +1,7 @@
 #social_menu {
     z-index: 1000;
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
     flex-direction: column;
     position: fixed;
@@ -20,5 +21,10 @@
     }
     a:not(:first-child) {
         margin-top: 40px;
+    }
+    &:hover {
+        a:not(:hover) {
+            opacity: 0.3;
+        }
     }
 }

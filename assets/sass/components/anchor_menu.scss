@@ -1,6 +1,7 @@
 #anchor_menu {
     z-index: 1000;
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -18,13 +19,18 @@
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 
         &:hover {
-            color: $yellow;
-            transform: rotate(-30deg);
+            /* transform: rotate(-30deg); */
+            transform: translateX(-7px);
         }
         span {
             display: flex;
             align-items: center;
             width: 74px;
+        }
+    }
+    &:hover {
+        a:not(:hover) {
+            opacity: 0.3;
         }
     }
 }

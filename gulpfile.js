@@ -16,6 +16,7 @@ var paths = {
     styles: {
         style: 'assets/sass/style.scss',
         sass: 'assets/sass/**/*.scss',
+        js: 'assets/js/**/*.js',
         dist: 'assets/css/',
     },
 };
@@ -79,6 +80,7 @@ function watch() {
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
     gulp.watch('index.html').on('change', reload);
+    gulp.watch(paths.styles.js).on('change', reload);
     gulp.watch(paths.styles.sass).on('change', gulp.series(clean, style, reload));
     gulp.watch(paths.styles.sass).on('change', gulp.series(clean, style, reload));
 }
