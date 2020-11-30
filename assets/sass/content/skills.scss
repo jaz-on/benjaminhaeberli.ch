@@ -3,8 +3,10 @@
         @include section__container;
         .skills__columns {
             display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
             justify-content: space-between;
-            margin-top: 100px;
+            margin-top: 75px;
             h3 {
                 color: white;
             }

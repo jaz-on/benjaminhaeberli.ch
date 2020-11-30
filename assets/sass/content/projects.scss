@@ -2,7 +2,7 @@
     .projects_container {
         @include section__container;
         .projects__cards {
-            margin-top: 200px;
+            margin-top: 160px;
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
