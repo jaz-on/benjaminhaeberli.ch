@@ -1,0 +1,30 @@
+#social_menu {
+    z-index: 1000;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    margin-left: 30px;
+    a {
+        @include nobefore;
+        -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+        &:hover {
+            transform: translateX(7px);
+        }
+        box-icon {
+            fill: white;
+        }
+    }
+    a:not(:first-child) {
+        margin-top: 40px;
+    }
+    &:hover {
+        a:not(:hover) {
+            opacity: 0.3;
+        }
+    }
+}

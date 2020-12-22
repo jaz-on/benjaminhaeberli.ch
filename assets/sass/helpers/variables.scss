@@ -1,0 +1,39 @@
+$anthracite: #686868;
+$yellow: #f9c722;
+$darkGray__: #020202;
+$darkGray: #040404;
+
+@mixin section__header {
+    text-align: center;
+    figcaption {
+        font-size: 24px;
+        color: $yellow;
+        margin-bottom: 5px;
+    }
+}
+
+@mixin section__container {
+    max-width: 1520px;
+    margin: auto;
+    @media only screen and (max-width: 1520px) {
+        max-width: none;
+        margin: 0px 75px;
+    }
+    @media only screen and (max-width: 1024px) {
+        margin: 0px 25px;
+    }
+}
+
+@mixin heading-font {
+    font-family: 'Archivo';
+}
+
+@mixin legend-font {
+    font-family: 'JetBrainsMono';
+}
+
+@mixin nobefore {
+    &::before {
+        display: none;
+    }
+}

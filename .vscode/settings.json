@@ -1,0 +1,12 @@
+{
+    "compile-hero.generate-minified-css": true,
+    "compile-hero.generate-minified-javascript": true,
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}

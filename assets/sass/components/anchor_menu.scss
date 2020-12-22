@@ -1,0 +1,36 @@
+#anchor_menu {
+    z-index: 1000;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    @include legend-font;
+    font-size: 14px;
+    a {
+        @include nobefore;
+        margin-top: 20px;
+        -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+        &:hover {
+            /* transform: rotate(-30deg); */
+            transform: translateX(-7px);
+        }
+        span {
+            display: flex;
+            align-items: center;
+            width: 74px;
+        }
+    }
+    &:hover {
+        a:not(:hover) {
+            opacity: 0.3;
+        }
+    }
+}

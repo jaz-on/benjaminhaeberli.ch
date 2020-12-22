@@ -1,0 +1,50 @@
+#education {
+    margin-bottom: 200px;
+    .education__container {
+        @include section__container;
+        .education__items {
+            display: flex;
+            margin-top: 160px;
+            .card {
+                transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+            .education__studies {
+                margin: 0px 100px 0px 0px;
+                .card.education__study {
+                    @include nobefore;
+                    width: 400px;
+                    .study__time {
+                        color: $anthracite;
+                        margin-bottom: 30px;
+                    }
+                    .study__name {
+                        margin-bottom: 10px;
+                    }
+                    .study__description {
+                        line-height: 25px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .education__courses {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card.education__course {
+                    @include nobefore;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 350px;
+                    height: 100px;
+                    padding: 25px;
+                    margin-bottom: 40px;
+                    .course__time {
+                        color: $anthracite;
+                    }
+                }
+            }
+        }
+    }
+}

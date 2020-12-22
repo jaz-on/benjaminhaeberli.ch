@@ -1,0 +1,30 @@
+#skills {
+    .skills__container {
+        @include section__container;
+        .skills__columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: space-between;
+            margin-top: 75px;
+            h3 {
+                color: white;
+            }
+            ul {
+                margin-top: 30px;
+                li {
+                    span {
+                        color: $anthracite;
+                    }
+                    &.favorite {
+                        color: $yellow;
+                        font-weight: bold;
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

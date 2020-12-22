@@ -1,2 +1,10 @@
+# NPM
+/node_modules/
 
-node_modules/
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
