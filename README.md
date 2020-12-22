@@ -6,17 +6,17 @@ Here is my personnal website source code. You can inspect it and take what do yo
 
 <img src="https://i.imgur.com/jY8eT4C.png"></img>
 
-
 ## Technologies 🛠️
 
 ### Librairies
-- [Boxicons](https://boxicons.com/usage/)
-- [Rellax JS](https://dixonandmoe.com/rellax/)
+
+-   [Boxicons](https://boxicons.com/usage/)
 
 ### Fonts
-- [Archivo](https://fonts.google.com/specimen/Archivo)
-- [Chivo](https://fonts.google.com/specimen/Chivo)
-- [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
+
+-   [Archivo](https://fonts.google.com/specimen/Archivo)
+-   [Chivo](https://fonts.google.com/specimen/Chivo)
+-   [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
 
 ## License 📄
 
