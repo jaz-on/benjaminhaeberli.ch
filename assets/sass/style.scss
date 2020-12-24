@@ -107,9 +107,9 @@ box-icon {
 }
 
 .section__header figcaption {
-    font-size: 24px;
+    font-size: 16px;
     color: $yellow;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 ::selection {
@@ -122,8 +122,8 @@ a {
     color: white;
     text-decoration: none;
     position: relative;
-    -o-transition: all 0.05s ease-in-out;
-    transition: all 0.05s ease-in-out;
+    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     &::before {
         background-color: $yellow;
         bottom: -3px;
@@ -131,7 +131,7 @@ a {
         height: 2px;
         left: 0;
         position: absolute;
-        transition: all 0.1s ease-in-out 0s;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
         visibility: visible;
         width: 100%;
     }
@@ -392,8 +392,6 @@ a {
         .skills__container {
             .skills__columns {
                 gap: 50px;
-                justify-content: center;
-                text-align: center;
             }
         }
     }
@@ -436,6 +434,24 @@ a {
                 flex-direction: column;
                 text-align: center;
                 gap: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 486px) {
+    #skills {
+        .skills__container {
+            .skills__columns {
+                gap: 0px;
+                justify-content: center;
+                text-align: center;
+                .skills__column {
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 50px;
+                    }
+                }
             }
         }
     }
