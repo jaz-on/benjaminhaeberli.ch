@@ -53,14 +53,16 @@
                         }
                     }
                     .experience__works {
-                        max-height: 0;
-                        overflow: hidden;
-                        visibility: hidden;
                         margin: 20px 0px;
-                        opacity: 0;
                         -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
                         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 
+                        &.no-touch {
+                            opacity: 0;
+                            max-height: 0;
+                            overflow: hidden;
+                            visibility: hidden;
+                        }
                         .card.works__container {
                             background: none;
                             transform: translateY(-40px);
@@ -81,10 +83,15 @@
                     }
                     &:hover {
                         .experience__job {
+                            cursor: default;
                             transform: scale(1);
-                            background: none;
+                            background: #040404;
+                            &.no-touch {
+                                cursor: pointer;
+                                background: none;
+                            }
                         }
-                        .experience__works {
+                        .experience__works.no-touch {
                             max-height: 500px;
                             visibility: visible;
                             opacity: 1;
