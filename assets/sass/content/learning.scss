@@ -10,7 +10,6 @@
         }
         #experience {
             .experience {
-                margin-bottom: 50px;
                 .date {
                     color: $anthracite;
                     margin-bottom: 15px;
@@ -26,12 +25,21 @@
                     margin-bottom: 25px;
                 }
                 .course {
+                    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
                     margin-bottom: 25px;
                     display: flex;
                     align-items: center;
                     gap: 15px;
                     .platform {
                         color: $anthracite;
+                    }
+                    &:hover {
+                        -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                        transform: translateX(20px);
+                        opacity: 0.3;
+                        cursor: pointer;
                     }
                 }
             }
@@ -57,5 +65,11 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #learning {
+        padding: 50px 50px;
     }
 }

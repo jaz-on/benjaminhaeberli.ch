@@ -14,7 +14,6 @@
         .contact {
             margin: auto;
             text-align: center;
-            margin-top: 75px;
             max-width: 800px;
             p {
                 line-height: 35px;
@@ -39,6 +38,30 @@
                     &::before {
                         background-color: black;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #contact {
+        padding: 100px;
+        .container {
+            margin: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #contact {
+        padding: 50px 50px;
+        .container {
+            padding: 50px 25px;
+            .contact {
+                p {
+                    line-height: 25px;
                 }
             }
         }

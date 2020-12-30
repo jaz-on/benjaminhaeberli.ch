@@ -110,3 +110,35 @@ a {
         margin-left: 5px;
     }
 }
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    small {
+        font-size: 12px;
+    }
+    header figcaption {
+        font-size: 14px;
+    }
+}

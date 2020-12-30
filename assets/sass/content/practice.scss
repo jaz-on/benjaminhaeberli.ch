@@ -71,3 +71,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 850px) {
+    #practice {
+        padding: 50px 50px;
+        .container {
+            #skills {
+                .domains {
+                    gap: 25px;
+                }
+                h3 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
