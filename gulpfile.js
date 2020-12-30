@@ -47,15 +47,8 @@ function style() {
             .pipe(sass())
             .pipe(sourcemaps.write())
             .pipe(autoprefixer())
+            /* .pipe(cleanCSS()) */
             .pipe(gulp.dest(paths.styles.dist))
-            /* .pipe(
-            rename({
-                suffix: '.min',
-            })
-        )
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(paths.styles.dist)) */
             .pipe(browserSync.stream())
     );
 }

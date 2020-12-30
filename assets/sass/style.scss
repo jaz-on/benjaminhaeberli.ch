@@ -3,44 +3,12 @@
 @import './helpers/fonts';
 @import './components/social_menu';
 @import './components/anchor_menu';
+@import './components/footer';
 @import './content/about';
-@import './content/education';
-@import './content/experience';
-@import './content/projects';
-@import './content/skills';
+@import './content/learning';
+@import './content/practice';
 @import './content/referees';
 @import './content/contact';
-
-/* Basic Classes */
-
-.colored--yellow {
-    color: $yellow;
-}
-
-.colored--anthracite {
-    color: $anthracite;
-}
-
-.section__header {
-    text-align: center;
-}
-
-.section {
-    margin-top: 250px;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
-.unfocused {
-    opacity: 0.5;
-    -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
 
 /* Basic Tags */
 
@@ -55,31 +23,23 @@ body {
 }
 
 h1 {
-    @include heading-font;
+    font-family: 'Archivo';
     font-size: 55px;
     line-height: 65px;
     font-weight: bold;
 }
 
 h2 {
-    @include heading-font;
     font-size: 45px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    color: $yellow;
 }
 
 h4 {
-    font-size: 24px;
-    font-weight: bold;
-    color: $yellow;
-}
-
-h5 {
     font-size: 20px;
     font-weight: bold;
     color: $yellow;
@@ -87,7 +47,7 @@ h5 {
 
 p {
     font-size: 20px;
-    line-height: 35px;
+    line-height: 25px;
 }
 
 strong {
@@ -95,21 +55,21 @@ strong {
 }
 small {
     font-size: 16px;
-    line-height: 19px;
-}
-
-figcaption {
-    @include legend-font;
+    line-height: 20px;
 }
 
 box-icon {
     fill: $yellow;
 }
 
-.section__header figcaption {
-    font-size: 16px;
-    color: $yellow;
-    margin-top: 10px;
+header {
+    margin-bottom: 50px;
+    figcaption {
+        color: $yellow;
+        font-family: 'JetBrainsMono';
+        font-size: 16px;
+        margin-top: 5px;
+    }
 }
 
 ::selection {
@@ -131,7 +91,7 @@ a {
         height: 2px;
         left: 0;
         position: absolute;
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         visibility: visible;
         width: 100%;
     }
@@ -139,19 +99,6 @@ a {
         &::before {
             width: 0%;
         }
-    }
-}
-.card {
-    padding: 50px;
-    background: $darkGray;
-    cursor: pointer;
-    .card__subtitle {
-        font-size: 30px;
-    }
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    &:hover {
-        transform: scale(0.95);
-        background: none;
     }
 }
 
@@ -163,84 +110,11 @@ a {
         margin-left: 5px;
     }
 }
-#footer {
-    padding: 20px 0px;
-    line-height: 1.2em;
-    text-align: center;
-    margin-bottom: 100px;
-}
 
 /* Working Area */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    overflow: hidden;
-    -o-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    .about__bio {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .container {
-            max-width: 570px;
-            p {
-                font-size: 24px;
-                margin-top: 50px;
-            }
-            ul {
-                margin-top: 50px;
-                li {
-                    display: flex;
-                    align-items: center;
-                    span {
-                        margin-left: 10px;
-                    }
-                    &:not(:first-child) {
-                        margin-top: 15px;
-                    }
-                }
-            }
-        }
-    }
-    .about__image {
-        width: 50%;
-        background-color: #e0b842;
-        background-image: url('../images/benjaminhaeberli.png');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        color: red;
-        cursor: pointer;
-        -o-transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        &:hover {
-            transform: translatex(35px);
-            background-color: #e3ded8;
-            background-image: url('../images/benjaminhaeberli_hover.png');
-        }
-    }
-}
-
-@media only screen and (max-width: 1670px) {
-    #projects {
-        .projects_container {
-            .projects__cards {
-                justify-content: center;
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 1366px) {
-    .section {
-        margin-top: 150px;
-    }
-
     #about {
         .about__bio {
             order: 2;
@@ -276,160 +150,11 @@ a {
         }
     }
 
-    #education {
-        .education__container {
-            .education__items {
-                margin-top: 100px;
-            }
-        }
-    }
-
     #referees {
         .referees__container {
-            @include section__container;
+            @include container;
             .referees__cards {
                 margin-top: 75px;
-            }
-        }
-    }
-
-    #experience {
-        .experience__container {
-            .experience__items {
-                margin-top: 100px;
-                .experience__item {
-                    &::before {
-                        display: none;
-                        visibility: hidden;
-                    }
-                    .experience__timeline {
-                        display: none;
-                        visibility: hidden;
-                    }
-
-                    a.experience__details {
-                        margin-left: 0px;
-                        .card.experience__job {
-                            .job__date {
-                                display: block;
-                                visibility: visible;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1149px) {
-    #projects {
-        .projects_container {
-            .projects__cards {
-                margin-top: 100px;
-            }
-        }
-    }
-
-    #education {
-        .education__container {
-            .education__items {
-                flex-direction: column;
-                gap: 40px;
-                .education__studies {
-                    margin: 0px;
-                    width: 100%;
-                    .card.education__study {
-                        width: 100%;
-                        box-sizing: border-box;
-                        margin-bottom: 0px;
-                    }
-                }
-                .education__courses {
-                    flex-direction: row;
-                    gap: 20px;
-                    width: 100%;
-                    .card.education__course {
-                        width: 25%;
-                        margin-bottom: 0px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 920px) {
-    #social_menu {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-@media only screen and (max-width: 810px) {
-    #experience {
-        .experience__container {
-            @include section__container;
-            .experience__items {
-                .experience__item {
-                    width: 100%;
-                    a.experience__details {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-    #education {
-        .education__container {
-            .education__items {
-                .education__courses {
-                    gap: 20px;
-
-                    .card.education__course {
-                        width: 40%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    #skills {
-        .skills__container {
-            .skills__columns {
-                gap: 50px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    #projects {
-        .projects_container {
-            .projects__cards {
-                .card.projects__project {
-                    width: 370px;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 649px) {
-    #education {
-        .education__container {
-            .education__items {
-                .education__studies {
-                    .card.education__study {
-                    }
-                }
-                .education__courses {
-                    .card.education__course {
-                        width: 100%;
-                    }
-                }
             }
         }
     }
@@ -447,48 +172,8 @@ a {
     }
 }
 
-@media only screen and (max-width: 486px) {
-    #skills {
-        .skills__container {
-            .skills__columns {
-                gap: 0px;
-                justify-content: center;
-                text-align: center;
-                .skills__column {
-                    width: 100%;
-                    &:not(:last-child) {
-                        margin-bottom: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 470px) {
     #about {
-        .about__bio {
-            /*
-            margin-top: 100px;
-            width: 100%;
-            .container {
-                max-width: 570px;
-                margin: 0px 25px;
-                h1 {
-                    text-align: center;
-                }
-                p {
-                    text-align: center;
-                }
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    li {
-                        margin: 15px auto 0px auto;
-                    }
-                }
-            } */
-        }
         .about__image {
             height: 400px;
         }

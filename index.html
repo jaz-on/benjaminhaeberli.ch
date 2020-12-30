@@ -35,28 +35,6 @@
 </head>
 
 <body>
-    <nav id="social_menu">
-        <a href="https://www.linkedin.com/in/benjaminhaeberli/" target="_blank">
-            <box-icon type="logo" name="linkedin-square"></box-icon>
-        </a>
-        <a href="https://github.com/benjaminhaeberli" target="_blank">
-            <box-icon type="logo" name="github"></box-icon>
-        </a>
-
-        <!-- <a href="https://www.facebook.com/benjamin.hae" target="_blank">
-            <box-icon type="logo" name="facebook"></box-icon>
-        </a> -->
-        <!-- <a href="https://twitter.com/1benjam1" target="_blank">
-            <box-icon type="logo" name="twitter"></box-icon>
-        </a> -->
-        <!-- <a href="" target="_blank"><box-icon type="logo" name="instagram"></box-icon></a> -->
-        <!-- <a href="" target="_blank"><box-icon type="logo" name="youtube"></box-icon></a> -->
-        <!-- <a href="" target="_blank"><box-icon type="logo" name="pinterest"></box-icon></a> -->
-        <!-- <a href="" target="_blank"><box-icon type="logo" name="discord"></box-icon></a> -->
-        <a href="mailto:hello@benjaminhaeberli.ch" target="_blank">
-            <box-icon type="solid" name="envelope"></box-icon>
-        </a>
-    </nav>
     <nav id="anchor_menu">
         <a href="#about"><span>A propos</span></a>
         <a href="#experience"><span>Expérience</span></a>
@@ -106,438 +84,325 @@
         </div>
         <div class="about__image"></div>
     </section>
-    <section class="section" id="experience">
-        <div class="experience__container">
-            <div class="section__header experience__header">
-                <h2>Expérience</h2>
-                <figcaption>Mes années de pratique en entreprise.</figcaption>
-            </div>
-            <div class="experience__items">
-                <div class="experience__item" data-time="2019 - Actuel">
-                    <div class="experience__timeline">
-                        <div class="timeline__point"></div>
-                        <div class="timeline__line"></div>
+    <section id="practice">
+        <div class="container">
+            <article id="skills">
+                <header>
+                    <h2>Skills</h2>
+                    <figcaption>Mes langages & outils.</figcaption>
+                </header>
+                <div class="domains">
+                    <div>
+                        <h3>Intégration</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li><a href="https://jquery.com/">JQuery</a></li>
+                            <li><a href="https://gulpjs.com/">GULP</a></li>
+                            <li><a href="https://sass-lang.com/">SASS</a></li>
+                            <li><a href="http://lesscss.org/">LESS</a></li>
+                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                        </ul>
                     </div>
-                    <a class="experience__details" href="https://925.ch/" target="blank">
-                        <div class="card experience__job">
-                            <p class="job__date">2019 - Actuel</p>
-                            <h3 class="job__title">Fullstack Developer</h3>
-                            <p class="card__subtitle job__company">925 Interactive Sàrl</p>
-                            <p class="location job__location">
-                                <box-icon type="solid" name="map" size="sm"></box-icon>
-                                <span>Villeneuve, VD (CH)</span>
-                            </p>
-                        </div>
-                        <div class="experience__works">
-                            <div class="card works__container">
-                                <ul>
-                                    <li>Architecture & design de base de données <small>(MySQL, PHP)</small></li>
-                                    <li>
-                                        Développement sur mesure avec Laravel 6 <small>(PHP, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Développement de plugins & thèmes pour Wordpress
-                                        <small>(PHP, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Intégration de la plateforme de paiement Stripe
-                                        <small>(API, JS)</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="experience__item" data-time="2016 - 2018">
-                    <div class="experience__timeline">
-                        <div class="timeline__point"></div>
-                        <div class="timeline__line"></div>
+                    <div>
+                        <h3>Développement</h3>
+                        <ul>
+                            <li><a href="https://www.php.net/">PHP7</a></li>
+                            <li><a href="https://wordpress.org/">WordPress</a></li>
+                            <li><a href="https://laravel.com/">Laravel</a></li>
+                            <li><a href="https://vuejs.org/">Vue.js</a></li>
+                            <li><a href="https://fr.reactjs.org/">React.js</a></li>
+                            <li>API REST</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
-                    <a class="experience__details" href="https://nanoxi.ch/" target="blank">
-                        <div class="card experience__job">
-                            <p class="job__date">2016 - 2018</p>
-                            <h3 class="job__title">Back-End Developer</h3>
-                            <p class="card__subtitle job__company">Nanoxi Sàrl</p>
-                            <p class="location job__location">
-                                <box-icon type="solid" name="map" size="sm"></box-icon>
-                                <span>Sion, VS (CH)</span>
-                            </p>
-                        </div>
-                        <div class="experience__works">
-                            <div class="card works__container">
-                                <ul>
-                                    <li>
-                                        Développement de plugins pour Umbraco 6 & 7
-                                        <small>(C#, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Développement d’une intégration .NET de Office 365
-                                        <small>(C#, HTML, CSS, JS, API)</small>
-                                    </li>
-                                    <li>
-                                        Développement d'un outil de migration de données pour U-Commerce
-                                        <small> (C#, HTML, CSS, JS)</small>
-                                    </li>
-                                    <li>
-                                        Installation, configuration et traductions de bornes interactives
-                                        <small>(HTML, CSS, JS)</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="experience__item" data-time="2016 - 2017">
-                    <div class="experience__timeline">
-                        <div class="timeline__point"></div>
-                        <div class="timeline__line"></div>
+                    <div>
+                        <h3>CMS</h3>
+                        <ul>
+                            <li><a href="https://wordpress.org/">WordPress</a></li>
+                            <li><a href="https://woocommerce.com/">WooCommerce</a></li>
+                            <li><a href="https://getkirby.com/">Kirby</a></li>
+                        </ul>
                     </div>
-                    <a class="experience__details" href="https://krios.ch/" target="blank">
-                        <div class="card experience__job">
-                            <p class="job__date">2016 - 2017</p>
-                            <h3 class="job__title">Technicien IT</h3>
-                            <p class="card__subtitle job__company">Krios Suisse SA</p>
-                            <p class="location job__location">
-                                <box-icon type="solid" name="map" size="sm"></box-icon>
-                                <span>Sion, VS (CH)</span>
-                            </p>
-                        </div>
-                        <div class="experience__works">
-                            <div class="card works__container">
-                                <ul>
-                                    <li>
-                                        Développement de scripts pour PRTG Network Monitor
-                                        <small>(C#, PowerShell)</small>
-                                    </li>
-                                    <li>
-                                        Gestion et contrôle de données sensibles
-                                        <small>(Emailing, Antivirus, Formatage)</small>
-                                    </li>
-                                    <li>
-                                        Installation & configuration avancée de poste de travail
-                                        <small>(Windows 10, Windows Server 2012, OS X El Capitan)</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
+                    <div>
+                        <h3>Serveur</h3>
+                        <ul>
+                            <li>Nom de domaine</li>
+                            <li>Hébergement</li>
+                            <li>SSL</li>
+                            <li>HTTPS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Référencement</h3>
+                        <ul>
+                            <li><a href="https://search.google.com/search-console/about">Google Search Console</a></li>
+                            <li><a href="https://marketingplatform.google.com/about/analytics/">Google Analytics</a>
+                            </li>
+                            <li><a href="https://developers.google.com/speed/pagespeed/insights/">Google Page Speed</a>
+                            </li>
+                            <li><a href="https://plausible.io/">Plausible</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>CI/CD</h3>
+                        <ul>
+                            <li><a href="https://github.com/">Github</a></li>
+                            <li><a href="https://about.gitlab.com/">GitLab</a></li>
+                            <li><a href="https://buddy.works/">Buddy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Automatisation</h3>
+                        <ul>
+                            <li><a href="xxx">Zapier</a></li>
+                            <li><a href="xxx">Integromat</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </article>
+            <article id="projects">
+                <header>
+                    <h2>Projets</h2>
+                    <figcaption>Mes dernières réalisations.</figcaption>
+                </header>
+                <div class="projects">
+                    <div>
+                        <h3>2020</h3>
+                        <ul>
+                            <div class="project">
+                                <div class="icon">
+                                    <box-icon type="outline" name="music" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Sunday Fog</h4>
+                                    <p>Site e-commerce pour mon label de musique</p>
+                                    <p class="tools">WordPress · WooCommerce · Elementor · CSS · JS</p>
+                                </div>
+
+                            </div>
+                            <div class="project">
+                                <div class="icon">
+                                    <box-icon type="outline" name="camera" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Morgane Raposo</h4>
+                                    <p>Site vitrine pour une photographe indépendante</p>
+                                    <p class="tools">WordPress · Elementor · CSS · JS</p>
+                                </div>
+                            </div>
+                        </ul>
+                        <h3>2019</h3>
+                        <ul>
+                            <div class="project">
+                                <div class="icon">
+                                    <box-icon type="solid" name="yin-yang" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Burnier Kine</h4>
+                                    <p>Site vitrine pour un cabinet de thérapie</p>
+                                    <p class="tools">React.js · SASS · JS</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </article>
         </div>
     </section>
-    <section class="section" id="projects">
-        <div class="projects_container">
-            <div class="section__header">
-                <h2>Projets</h2>
-                <figcaption>Mes dernières réalisations.</figcaption>
-            </div>
-            <div class="projects__cards">
-                <a href="https://burnierkine.ch/" target="_blank" class="card projects__project">
-                    <div class="project__header">
-                        <div>
-                            <box-icon name='yin-yang' type='solid' size="lg"></box-icon>
-                        </div>
-                        <div>
-                            <box-icon type='logo' name='github' color="white"></box-icon>
-                            <box-icon name="link-external" color="white"></box-icon>
-                        </div>
-
-                    </div>
-                    <h3>Kinésiologie Burnier</h3>
-                    <p class="project__description">
-                        Site vitrine pour un cabinet de thérapie de ma ville.
-                    </p>
-                    <p class="project__languages">React.js · SCSS · JS</p>
-                </a>
-                <a href="https://morganeraposo.ch/" target="_blank" class="card projects__project">
-                    <div class="project__header">
-                        <div>
-                            <box-icon name='camera' size="lg"></box-icon>
-                        </div>
-                        <div>
-                            <!-- <box-icon type='logo' name='github' color="white"></box-icon> -->
-                            <box-icon name="link-external" color="white"></box-icon>
-                        </div>
-
-                    </div>
-                    <h3>Morgane Raposo</h3>
-                    <p class="project__description">
-                        Site vitrine pour une photographe freelance qui s'avère être ma copine !
-                    </p>
-                    <p class="project__languages">WordPress · Elementor · CSS · JS</p>
-                </a>
-                <a href="https://sundayfog.ch/" target="_blank" class="card projects__project">
-                    <div class="project__header">
-                        <div>
-                            <box-icon name='music' size="lg"></box-icon>
-                        </div>
-                        <div>
-                            <box-icon type='logo' name='github' color="white"></box-icon>
-                            <box-icon name="link-external" color="white"></box-icon>
-                        </div>
-
-                    </div>
-                    <h3>Sunday Fog</h3>
-                    <p class="project__description">
-                        Site e-commerce pour mon label de musique.
-                    </p>
-                    <p class="project__languages">WordPress · Elementor · CSS · JS</p>
-                </a>
-
-            </div>
-        </div>
-    </section>
-    <section class="section" id="education">
-        <div class="education__container">
-            <div class="section__header education__header">
-                <h2>Formations</h2>
-                <figcaption>Mes qualifications et certificats.</figcaption>
-            </div>
-            <div class="education__items">
-                <div class="education__studies">
-                    <div class="card education__study" href="https://eptm.ch/" target="_blank">
-                        <p class="study__time">2014 - 2018</p>
-                        <h3 class="study__title">Software Developer</h3>
-                        <p class="card__subtitle study__name">EPTM</p>
-                        <p class="study__description">
-                            Base informatique & spécialisation développement d'applications
+    <section id="learning">
+        <div class="container">
+            <article id="experience">
+                <header>
+                    <h2>Expérience</h2>
+                    <figcaption>Mes années de pratique en entreprise.</figcaption>
+                </header>
+                <div class="experiences">
+                    <div class="experience">
+                        <p class="date">2019 - Actuel</p>
+                        <h3>Full-Stack Developer</h3>
+                        <p>925 Interactive Sàrl</p>
+                        <p class="location">
+                            <box-icon type="solid" name="map" size="sm"></box-icon>
+                            <span>Villeneuve, VD (CH)</span>
                         </p>
-                        <p class="location study__location">
+                    </div>
+                    <div class="experience">
+                        <p class="date">2016 - 2018</p>
+                        <h3>Back-End Developer</h3>
+                        <p>Nanoxi Sàrl</p>
+                        <p class="location">
+                            <box-icon type="solid" name="map" size="sm"></box-icon>
+                            <span>Sion, VS (CH)</span>
+                        </p>
+                    </div>
+                    <div class="experience">
+                        <p class="date">2016 - 2017</p>
+                        <h3>Technicien IT</h3>
+                        <p>Krios Suisse SA</p>
+                        <p class="location">
                             <box-icon type="solid" name="map" size="sm"></box-icon>
                             <span>Sion, VS (CH)</span>
                         </p>
                     </div>
                 </div>
-                <div class="education__courses">
-                    <a class="card education__course" href="https://www.udemy.com/course/react-le-guide-complet/"
-                        target="_blank">
-                        <p class="course__time">2019</p>
-                        <h4 class="study__title">React 16+</h3>
-                            <p class="study__description">
-                                Router, Firebase, etc.
-                            </p>
-                    </a>
-                    <a class="card education__course"
-                        href="https://www.udemy.com/course/comprendre-le-seo-et-developper-son-trafic-avec-google/"
-                        target="_blank">
-                        <p class="course__time">2020</p>
-                        <h4 class="study__title">SEO</h3>
-                            <p class="study__description">
-                                Référencement naturel
-                            </p>
-                    </a>
-                    <a class="card education__course" href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"
-                        target="_blank">
-                        <p class="course__time">2020</p>
-                        <h4 class="study__title">Vue.js</h3>
-                            <p class="study__description">
-                                Vue Router, Vuex, etc.
-                            </p>
-                    </a>
-                    <a class="card education__course"
-                        href="https://www.udemy.com/course/gestion-de-projet-agile-la-methode-scrum/" target="_blank">
-                        <p class="course__time">2020</p>
-                        <h4 class="study__title">Méthode Agile</h3>
-                            <p class="study__description">
-                                Gestion de projet
-                            </p>
-                    </a>
-                    <a class="card education__course"
-                        href="https://www.udemy.com/course/growth-hacking-le-guide-complet-pour-lancer-son-projet/"
-                        target="_blank">
-                        <p class="course__time">2020</p>
-                        <h4 class="study__title">Growth Hacking</h3>
-                            <p class="study__description">
-                                Marketing
-                            </p>
-                    </a>
+            </article>
+            <article id="courses">
+                <header>
+                    <h2>Formations</h2>
+                    <figcaption>Mes qualifications et certificats.</figcaption>
+                </header>
+                <div class="courses">
+                    <div>
+                        <h3>2020</h3>
+                        <ul>
+                            <div class="course">
+                                <div class="icon">
+                                    <box-icon type="outline" name="notepad" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Gestion de projet Agile</h4>
+                                    <p>Fondamentaux & outils de la méthode SCRUM</p>
+                                    <p class="platform">Udemy</p>
+                                </div>
+
+                            </div>
+                            <div class="course">
+                                <div class="icon">
+                                    <box-icon type="outline" name="globe" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Référencement naturel</h4>
+                                    <p>Développer son trafic grâce au SEO</p>
+                                    <p class="platform">Udemy</p>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="icon">
+                                    <box-icon type="outline" name="trending-up" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Growth Hacking</h4>
+                                    <p>Méthodologie de travail, MVP, Mixpanel</p>
+                                    <p class="platform">Udemy</p>
+                                </div>
+                            </div>
+                        </ul>
+                        <h3>2019</h3>
+                        <ul>
+                            <div class="course">
+                                <div class="icon">
+                                    <box-icon type="logo" name="react" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>React 16+</h4>
+                                    <p>React.js, React Router 4, Firebase, Redux</p>
+                                    <p class="platform">Udemy</p>
+                                </div>
+                            </div>
+                        </ul>
+                        <h3>2014-2018</h3>
+                        <ul>
+                            <div class="course">
+                                <div class="icon">
+                                    <box-icon type="solid" name="school" size="sm"></box-icon>
+                                </div>
+                                <div class="content">
+                                    <h4>Développeur d'applications</h4>
+                                    <p>Base informatique & spécialisation développements d'applications</p>
+                                    <p class="platform">EPTM, Sion (CH)</p>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
                 </div>
-            </div>
+            </article>
         </div>
     </section>
-    <section class="section" id="skills">
-        <div class="skills__container">
-            <div class="section__header skills__header">
-                <h2>Skills</h2>
-                <figcaption>Mes langages & outils.</figcaption>
-            </div>
-            <!-- <div class="skills__columns">
-                <div class="skills__column">
-                    <h3>Code</h3>
-                    <ul>
-                        <li class="favorite">PHP</li>
-                        <li>Javascript</li>
-                        <li>HTML & CSS</li>
-                        <li>C#/.NET</li>
-                        <li class="favorite">SQL</li>
-                        <li class="favorite">GIT</li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li class="favorite">Laravel</li>
-                        <li>React.js</li>
-                        <li>Vue.js <span>(en cours)</span></li>
-                        <li>JQuery</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Outils</h3>
-                    <ul>
-                        <li class="favorite">WordPress</li>
-                        <li class="favorite">WooCommerce</li>
-                        <li>Elementor</li>
-                        <li class="favorite">Composer</li>
-                        <li>NPM</li>
-                        <li>Buddy</li>
-                        <li>Gulp</li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Design</h3>
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Adobe XD</li>
-                    </ul>
-                </div>
-            </div> -->
-            <div class="skills__columns">
-                <div class="skills__column">
-                    <h3>Intégration</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li><a href="https://jquery.com/">JQuery</a></li>
-                        <li><a href="https://gulpjs.com/">GULP</a></li>
-                        <li><a href="https://sass-lang.com/">SASS</a></li>
-                        <li><a href="http://lesscss.org/">LESS</a></li>
-                        <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Développement</h3>
-                    <ul>
-                        <li><a href="https://www.php.net/">PHP7</a></li>
-                        <li><a href="https://wordpress.org/">WordPress</a></li>
-                        <li><a href="https://laravel.com/">Laravel</a></li>
-                        <li><a href="https://vuejs.org/">Vue.js</a></li>
-                        <li><a href="https://fr.reactjs.org/">React.js</a></li>
-                        <li>API REST</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>CMS</h3>
-                    <ul>
-                        <li><a href="https://wordpress.org/">WordPress</a></li>
-                        <li><a href="https://woocommerce.com/">WooCommerce</a></li>
-                        <li><a href="https://getkirby.com/">Kirby</a></li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Serveur</h3>
-                    <ul>
-                        <li>Nom de domaine</li>
-                        <li>Hébergement</li>
-                        <li>SSL</li>
-                        <li>HTTPS</li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Référencement</h3>
-                    <ul>
-                        <li><a href="https://search.google.com/search-console/about">Google Search Console</a></li>
-                        <li><a href="https://marketingplatform.google.com/about/analytics/">Google Analytics</a></li>
-                        <li><a href="https://developers.google.com/speed/pagespeed/insights/">Google Page Speed</a></li>
-                        <li><a href="https://plausible.io/">Plausible</a></li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>CI/CD</h3>
-                    <ul>
-                        <li><a href="https://github.com/">Github</a></li>
-                        <li><a href="https://about.gitlab.com/">GitLab</a></li>
-                        <li><a href="https://buddy.works/">Buddy</a></li>
-                    </ul>
-                </div>
-                <div class="skills__column">
-                    <h3>Automatisation</h3>
-                    <ul>
-                        <li><a href="xxx">Zapier</a></li>
-                        <li><a href="xxx">Integromat</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="referees">
-        <div class="referees__container">
-            <div class="section__header">
+    <section id="referees">
+        <div class="container">
+            <header>
                 <h2>Références</h2>
                 <figcaption>Ils m'ont fait confiance pour leur projet.</figcaption>
-            </div>
-            <div class="referees__cards">
-                <div class="referees__card">
-                    <h5>Pascal Allaz</h5>
-                    <p>CEO</p>
-                    <p>925 Sàrl Interactive</p>
-                    <p>Villeneuve, VD</p>
-                    <p><a href="tel:41792041655">+41 79 204 16 55</a></p>
-                    <p><a href="mailto:pascal@925.ch">pascal@925.ch</a></p>
+            </header>
+            <div class="referees">
+                <div class="referee">
+                    <h3>Pascal Allaz</h5>
+                        <p>CEO</p>
+                        <p>925 Sàrl Interactive</p>
+                        <p>Villeneuve, VD</p>
+                        <p><a href="tel:41792041655">+41 79 204 16 55</a></p>
+                        <p><a href="mailto:pascal@925.ch">pascal@925.ch</a></p>
                 </div>
-                <div class="referees__card">
-                    <h5>Gilles Faessler</h5>
-                    <p>Responsable de stage</p>
-                    <p>Nanoxi Sàrl</p>
-                    <p>Sion, VS</p>
-                    <p><a href="tel:41788252219">+41 78 825 22 19</a></p>
-                    <p><a href="mailto:gilles.faessler@nanoxi.com">gilles.faessler@nanoxi.com</a></p>
+                <div class="referee">
+                    <h3>Gilles Faessler</h5>
+                        <p>Responsable de stage</p>
+                        <p>Nanoxi Sàrl</p>
+                        <p>Sion, VS</p>
+                        <p><a href="tel:41788252219">+41 78 825 22 19</a></p>
+                        <p><a href="mailto:gilles.faessler@nanoxi.com">gilles.faessler@nanoxi.com</a></p>
                 </div>
-                <div class="referees__card">
-                    <h5>Frédéric Papilloud</h5>
-                    <p>Responsable de stage</p>
-                    <p>Krios SA</p>
-                    <p>Sion, VS</p>
-                    <p><a href="tel:41273233838">+41 27 323 38 38</a></p>
-                    <p><a href="mailto:frederic.papilloud@krios.ch">frederic.papilloud@krios.ch</a></p>
+                <div class="referee">
+                    <h3>Frédéric Papilloud</h5>
+                        <p>Responsable de stage</p>
+                        <p>Krios SA</p>
+                        <p>Sion, VS</p>
+                        <p><a href="tel:41273233838">+41 27 323 38 38</a></p>
+                        <p><a href="mailto:frederic.papilloud@krios.ch">frederic.papilloud@krios.ch</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section" id="contact">
-        <div class="contact__container">
-            <div class="section__header">
+    <section id="contact">
+        <div class="container">
+            <header>
                 <h2>Contact</h2>
                 <figcaption>Une question, une idée, un projet ?</figcaption>
-            </div>
-            <div class="contact__content">
+            </header>
+            <div class="contact">
                 <p>Je suis toujours à l'affût de nouveaux projets et idées auxquels je pourrais collaborer, c'est
                     pourquoi ma boîte de réception est toujours
                     ouverte. N'hésites pas à m'envoyer un email pour discuter ensemble !</p>
-                <p class="contact__email"><a href="mailto:hello@benjaminhaeberli.ch" target="_blank">
+                <p class="email"><a href="mailto:hello@benjaminhaeberli.ch" target="_blank">
                         hello@benjaminhaeberli.ch
                     </a></p>
             </div>
         </div>
     </section>
-    <section class="section" id="footer">
+    <section id="footer">
+        <nav id="social">
+            <a href="https://www.linkedin.com/in/benjaminhaeberli/" target="_blank">
+                <box-icon type="logo" name="linkedin-square"></box-icon>
+            </a>
+            <a href="https://github.com/benjaminhaeberli" target="_blank">
+                <box-icon type="logo" name="github"></box-icon>
+            </a>
+            <a href="mailto:hello@benjaminhaeberli.ch" target="_blank">
+                <box-icon type="solid" name="envelope"></box-icon>
+            </a>
+
+        </nav>
         <small>
+
+
+            Site créé avec ❤️ par
+            <a href="https://www.linkedin.com/in/benjaminhaeberli/" target="_blank">Benjamin Haeberli</a>
+            <br />
+            <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank">Code source</a>
+            disponible sur Github ⚙️
+            <br /><br />
             📊 Analytics avec <a href="https://plausible.io/" target="_blank">Plausible</a>
             <br />
             📹 Chatbot avec <a href="https://videoask.com/" target="_blank">VideoAsk</a>
             <br />
             🔥 Heatmaps avec <a href="https://www.hotjar.com/" target="_blank">Hotjar</a>
 
-            <br /><br />
-            Site créé avec ❤️ par
-            <a href="https://www.linkedin.com/in/benjaminhaeberli/" target="_blank">Benjamin Haeberli</a>
-            <br />
-            <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank">Code source</a>
-            disponible sur Github ⚙️
+
         </small>
+
     </section>
 
     <!-- Add the code below inside the <body> tags of your HTML page -->

@@ -1,14 +1,22 @@
 #referees {
-    .referees__container {
-        @include section__container;
-        .referees__cards {
+    padding: 100px 0px;
+    background-color: $darkGray;
+    .container {
+        @include container;
+        header {
+            text-align: center;
+        }
+        .referees {
             margin-top: 100px;
             display: flex;
             flex-wrap: wrap;
             gap: 100px;
             justify-content: center;
-            .referees__card {
-                h5,
+            .referee {
+                h3 {
+                    color: $yellow;
+                }
+                h3,
                 p {
                     line-height: 1.25em;
                 }

@@ -10,7 +10,7 @@
     height: 100%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    @include legend-font;
+    font-family: 'JetBrainsMono';
     font-size: 14px;
     a {
         @include nobefore;
