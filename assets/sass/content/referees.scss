@@ -10,7 +10,7 @@
             margin-top: 100px;
             display: flex;
             flex-wrap: wrap;
-            gap: 100px;
+            gap: 75px;
             justify-content: center;
             .referee {
                 h3 {
@@ -27,6 +27,29 @@
                         color: $yellow;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #referees {
+        padding: 100px;
+        .container {
+            margin: auto;
+            .referees {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    #referees {
+        .container {
+            max-width: 680px;
+            article {
+                width: 100%;
             }
         }
     }

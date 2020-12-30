@@ -6,14 +6,12 @@ $darkGray: #070707;
 
 @mixin container {
     max-width: 1520px;
-    margin: auto;
-    @media only screen and (max-width: 1520px) {
+    /* margin: auto; */
+    /* @media only screen and (max-width: 1520px) {
         max-width: none;
-        margin: 0px 75px;
     }
     @media only screen and (max-width: 1024px) {
-        margin: 0px 25px;
-    }
+    } */
 }
 
 @mixin nobefore {

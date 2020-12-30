@@ -5,7 +5,7 @@
     overflow: hidden;
     -o-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    .about__bio {
+    .bio {
         width: 50%;
         display: flex;
         justify-content: center;
@@ -13,6 +13,15 @@
 
         .container {
             max-width: 570px;
+            .mobile-image {
+                margin-bottom: 50px;
+                display: none;
+                visibility: hidden;
+                img {
+                    width: 400px;
+                    border-radius: 100%;
+                }
+            }
             p {
                 font-size: 24px;
                 line-height: 35px;
@@ -47,6 +56,26 @@
             transform: translatex(50px);
             background-color: #e3ded8;
             background-image: url('../images/benjaminhaeberli_hover.png');
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #about {
+        .bio {
+            margin: 100px 0px;
+            width: 100%;
+            .container {
+                max-width: 680px;
+                /* .mobile-image {
+                    display: block;
+                    visibility: visible;
+                } */
+            }
+        }
+        .about__image {
+            display: none;
+            visibility: hidden;
         }
     }
 }
