@@ -82,8 +82,8 @@ a {
     color: white;
     text-decoration: none;
     position: relative;
-    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
     &::before {
         background-color: $yellow;
         bottom: -3px;
@@ -91,7 +91,8 @@ a {
         height: 2px;
         left: 0;
         position: absolute;
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        -o-transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
         visibility: visible;
         width: 100%;
     }

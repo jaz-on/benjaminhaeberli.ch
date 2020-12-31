@@ -38,10 +38,17 @@
                     margin-bottom: 25px;
                 }
                 .project {
+                    @include nobefore;
                     margin-bottom: 25px;
                     display: flex;
                     align-items: center;
                     gap: 15px;
+                    transition: none;
+                    &:hover {
+                        opacity: 0.3;
+                        cursor: pointer;
+                        transition: none;
+                    }
                     .tools {
                         color: $anthracite;
                     }

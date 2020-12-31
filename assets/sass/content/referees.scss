@@ -23,8 +23,10 @@
                 a {
                     @include nobefore;
                     color: $anthracite;
+                    transition: none;
                     &:hover {
                         color: $yellow;
+                        transition: none;
                     }
                 }
             }

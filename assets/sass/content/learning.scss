@@ -10,12 +10,18 @@
         }
         #experience {
             .experience {
+                &:not(:last-child) {
+                    margin-bottom: 50px;
+                }
+                h3 {
+                    color: $yellow;
+                }
                 .date {
                     color: $anthracite;
                     margin-bottom: 15px;
                 }
-                h3 {
-                    color: $yellow;
+                .location {
+                    margin-top: 10px;
                 }
             }
         }
@@ -25,21 +31,19 @@
                     margin-bottom: 25px;
                 }
                 .course {
-                    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                    @include nobefore;
                     margin-bottom: 25px;
                     display: flex;
                     align-items: center;
                     gap: 15px;
-                    .platform {
-                        color: $anthracite;
-                    }
+                    transition: none;
                     &:hover {
-                        -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                        transform: translateX(20px);
                         opacity: 0.3;
                         cursor: pointer;
+                        transition: none;
+                    }
+                    .platform {
+                        color: $anthracite;
                     }
                 }
             }

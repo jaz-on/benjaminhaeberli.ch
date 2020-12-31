@@ -36,12 +36,14 @@
 
 <body>
     <nav id="anchor_menu">
-        <a href="#about"><span>A propos</span></a>
-        <a href="#experience"><span>Expérience</span></a>
-        <a href="#projects"><span>Projets</span></a>
-        <a href="#education"><span>Formations</span></a>
-        <a href="#skills"><span>Skills</span></a>
-        <a href="#referees"><span>Références</span></a>
+        <ul class="container">
+            <a href="#about"><span>Accueil</span></a>
+            <a href="#practice"><span>Skills</span></a>
+            <a href="#projects"><span>Projets</span></a>
+            <a href="#learning"><span>Expérience</span></a>
+            <a href="#contact"><span>Contact</span></a>
+        </ul>
+
     </nav>
     <section id="about">
         <div class="bio">
@@ -171,7 +173,7 @@
                     <div>
                         <h3>2020</h3>
                         <ul>
-                            <div class="project">
+                            <a class="project" href="https://sundayfog.ch/" target="_blank">
                                 <div class="icon">
                                     <box-icon type="outline" name="music" size="sm"></box-icon>
                                 </div>
@@ -180,9 +182,8 @@
                                     <p>Site e-commerce pour mon label de musique</p>
                                     <p class="tools">WordPress · WooCommerce · Elementor · CSS · JS</p>
                                 </div>
-
-                            </div>
-                            <div class="project">
+                            </a>
+                            <a class="project" href="https://morganeraposo.ch/" target="_blank">
                                 <div class="icon">
                                     <box-icon type="outline" name="camera" size="sm"></box-icon>
                                 </div>
@@ -191,11 +192,11 @@
                                     <p>Site vitrine pour une photographe indépendante</p>
                                     <p class="tools">WordPress · Elementor · CSS · JS</p>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                         <h3>2019</h3>
                         <ul>
-                            <div class="project">
+                            <a class="project" href="https://burnierkine.ch/" target="_blank">
                                 <div class="icon">
                                     <box-icon type="solid" name="yin-yang" size="sm"></box-icon>
                                 </div>
@@ -204,7 +205,7 @@
                                     <p>Site vitrine pour un cabinet de thérapie</p>
                                     <p class="tools">React.js · SASS · JS</p>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                     </div>
 
@@ -223,7 +224,7 @@
                     <div class="experience">
                         <p class="date">2019 - Actuel</p>
                         <h3>Full-Stack Developer</h3>
-                        <p>925 Interactive Sàrl</p>
+                        <p><a href="https://925.ch/" target="_blank">925 Interactive Sàrl</a></p>
                         <p class="location">
                             <box-icon type="solid" name="map" size="sm"></box-icon>
                             <span>Villeneuve, VD (CH)</span>
@@ -232,7 +233,7 @@
                     <div class="experience">
                         <p class="date">2016 - 2018</p>
                         <h3>Back-End Developer</h3>
-                        <p>Nanoxi Sàrl</p>
+                        <p><a href="https://nanoxi.ch/" target="_blank">Nanoxi Sàrl</a></p>
                         <p class="location">
                             <box-icon type="solid" name="map" size="sm"></box-icon>
                             <span>Sion, VS (CH)</span>
@@ -241,7 +242,7 @@
                     <div class="experience">
                         <p class="date">2016 - 2017</p>
                         <h3>Technicien IT</h3>
-                        <p>Krios Suisse SA</p>
+                        <p><a href="https://krios.ch/" target="_blank">Krios Suisse SA</a></p>
                         <p class="location">
                             <box-icon type="solid" name="map" size="sm"></box-icon>
                             <span>Sion, VS (CH)</span>
@@ -258,7 +259,9 @@
                     <div>
                         <h3>2020</h3>
                         <ul>
-                            <div class="course">
+                            <a class="course"
+                                href="https://www.udemy.com/course/gestion-de-projet-agile-la-methode-scrum/"
+                                target="_blank">
                                 <div class="icon">
                                     <box-icon type="outline" name="notepad" size="sm"></box-icon>
                                 </div>
@@ -268,8 +271,10 @@
                                     <p class="platform">Udemy</p>
                                 </div>
 
-                            </div>
-                            <div class="course">
+                            </a>
+                            <a class="course"
+                                href="https://www.udemy.com/course/comprendre-le-seo-et-developper-son-trafic-avec-google//"
+                                target="_blank">
                                 <div class="icon">
                                     <box-icon type="outline" name="globe" size="sm"></box-icon>
                                 </div>
@@ -278,8 +283,10 @@
                                     <p>Développer son trafic grâce au SEO</p>
                                     <p class="platform">Udemy</p>
                                 </div>
-                            </div>
-                            <div class="course">
+                            </a>
+                            <a class="course"
+                                href="https://www.udemy.com/course/growth-hacking-le-guide-complet-pour-lancer-son-projet/"
+                                target="_blank">
                                 <div class="icon">
                                     <box-icon type="outline" name="trending-up" size="sm"></box-icon>
                                 </div>
@@ -288,11 +295,12 @@
                                     <p>Méthodologie de travail, MVP, Mixpanel</p>
                                     <p class="platform">Udemy</p>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                         <h3>2019</h3>
                         <ul>
-                            <div class="course">
+                            <a class="course" href="https://www.udemy.com/course/react-le-guide-complet/"
+                                target="_blank">
                                 <div class="icon">
                                     <box-icon type="logo" name="react" size="sm"></box-icon>
                                 </div>
@@ -301,11 +309,11 @@
                                     <p>React.js, React Router 4, Firebase, Redux</p>
                                     <p class="platform">Udemy</p>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                         <h3>2014-2018</h3>
                         <ul>
-                            <div class="course">
+                            <a class="course" href="https://eptm.ch/" target="_blank">
                                 <div class="icon">
                                     <box-icon type="solid" name="school" size="sm"></box-icon>
                                 </div>
@@ -314,7 +322,7 @@
                                     <p>Base informatique & spécialisation développements d'applications</p>
                                     <p class="platform">EPTM, Sion (CH)</p>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                     </div>
 
