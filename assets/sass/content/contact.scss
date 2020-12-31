@@ -1,13 +1,64 @@
 #contact {
-    .contact__container {
-        @include section__container;
-        .contact__content {
+    padding: 200px 0px;
+    .container {
+        display: block;
+        margin: auto;
+        padding: 75px;
+        max-width: 950px;
+        border: 4px solid $yellow;
+        header {
+            text-align: center;
+        }
+        .contact {
             margin: auto;
             text-align: center;
-            margin-top: 75px;
             max-width: 800px;
-            .contact__email {
+            p {
+                line-height: 35px;
+            }
+            .email {
                 margin-top: 20px;
+                color: $yellow;
+            }
+        }
+        &:hover {
+            background-color: #e1b943;
+            border: 4px solid rgba(0, 0, 0, 0);
+            color: black;
+            header figcaption {
+                color: black;
+            }
+            .contact .email {
+                a {
+                    color: black;
+                    &::before {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #contact {
+        padding: 100px;
+        .container {
+            margin: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #contact {
+        padding: 50px 50px;
+        .container {
+            padding: 50px 25px;
+            .contact {
+                p {
+                    line-height: 25px;
+                }
             }
         }
     }

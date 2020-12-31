@@ -1,24 +1,78 @@
 #referees {
-    .referees__container {
-        @include section__container;
-        .referees__cards {
-            margin-top: 100px;
+    padding: 100px 0px;
+    background-color: $darkGray;
+    .container {
+        @include container;
+        margin: auto;
+        header {
+            text-align: center;
+        }
+        .referees {
             display: flex;
             flex-wrap: wrap;
-            gap: 100px;
+            gap: 75px;
             justify-content: center;
-            .referees__card {
-                h5,
+            .referee {
+                h3 {
+                    color: $yellow;
+                }
+                h3,
                 p {
                     line-height: 1.25em;
                 }
                 a {
                     @include nobefore;
                     color: $anthracite;
+                    transition: none;
                     &:hover {
                         color: $yellow;
+                        transition: none;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #referees {
+        padding: 100px;
+        .container {
+            .referees {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    #referees {
+        .container {
+            max-width: 680px;
+            article {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #referees {
+        padding: 50px 50px;
+        .container {
+            max-width: 100%;
+            .referees {
+                gap: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    #referees {
+        .container {
+            header {
+                text-align: left;
             }
         }
     }

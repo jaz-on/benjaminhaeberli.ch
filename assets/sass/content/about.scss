@@ -1,0 +1,87 @@
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: hidden;
+    -o-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    .bio {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            max-width: 570px;
+            p {
+                font-size: 24px;
+                line-height: 35px;
+                margin-top: 50px;
+            }
+            ul {
+                margin-top: 50px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-left: 10px;
+                    }
+                    &:not(:first-child) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .about__image {
+        width: 50%;
+        background-color: #e0b842;
+        background-image: url('../images/benjaminhaeberli.png');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: red;
+        -o-transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        &:hover {
+            transform: translatex(50px);
+            background-color: #e3ded8;
+            background-image: url('../images/benjaminhaeberli_hover.png');
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #about {
+        padding: 100px;
+        min-height: 0px;
+        .bio {
+            width: 100%;
+            .container {
+                max-width: 680px;
+            }
+        }
+        .about__image {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #about {
+        padding: 120px 50px;
+        .bio {
+            .container {
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 25px;
+                }
+                ul {
+                    font-size: 18px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
