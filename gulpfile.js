@@ -39,18 +39,16 @@ const clean = () => del([paths.styles.dist]);
  * Compile all SASS files into one unique CSS
  */
 function style() {
-    return (
-        gulp
-            .src(paths.styles.style)
-            .pipe(sourcemaps.init())
-            .pipe(sass(sassOptions).on('error', sass.logError))
-            .pipe(sass())
-            .pipe(sourcemaps.write())
-            .pipe(autoprefixer())
-            /* .pipe(cleanCSS()) */
-            .pipe(gulp.dest(paths.styles.dist))
-            .pipe(browserSync.stream())
-    );
+    return gulp
+        .src(paths.styles.style)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(sass())
+        .pipe(sourcemaps.write())
+        .pipe(autoprefixer())
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(paths.styles.dist))
+        .pipe(browserSync.stream());
 }
 
 /**
