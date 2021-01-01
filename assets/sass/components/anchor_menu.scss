@@ -6,12 +6,10 @@
     z-index: 1000;
     display: flex;
     .container {
-        margin: 40px auto;
-        background: black;
+        margin: 0px auto;
         font-size: 14px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        border-bottom: 2px solid $yellow;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -23,17 +21,19 @@
             display: flex;
             padding: 15px;
             transition: none;
+            background: black;
+            border-top: 2px solid $yellow;
             &:hover {
                 background: $yellow;
                 color: black;
             }
             &:first-child {
                 border-top-left-radius: 20px;
-                /*  border-bottom-left-radius: 20px; */
+                border-left: 2px solid $yellow;
             }
             &:last-child {
                 border-top-right-radius: 20px;
-                /* border-bottom-right-radius: 20px; */
+                border-right: 2px solid $yellow;
             }
         }
     }
