@@ -10,7 +10,7 @@ Here is my personnal website source code. You can inspect it and take what do yo
 
 ### Librairies
 
--   [Boxicons](https://boxicons.com/usage/)
+-   [Boxicons](https://boxicons.com/usage)
 
 ### Fonts
 
